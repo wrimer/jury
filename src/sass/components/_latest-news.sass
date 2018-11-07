@@ -1,0 +1,65 @@
+.latest-news
+	min-width: 320px
+
+	&__container
+		margin-top: 98px
+		+r(767)
+			margin-top: 35px
+
+	&__title
+		margin-bottom: 37px
+		+r(767)
+			margin-bottom: 14px
+
+	&__item
+		height: 364px
+		+r(767)
+			height: 324px
+
+	&__image
+		width: 100%
+		object-fit: cover
+		height: 200px
+		+r(1199)
+			height: 162px
+		+r(767)
+			height: 185px
+
+	&__category
+		+markpro
+		color: $blue
+		font-size: 12px
+		font-weight: 400
+		letter-spacing: 2px
+		text-transform: uppercase
+		margin-top: 16px
+		+r(991)
+			margin-top: 10px
+
+	&__item-title
+		+financier
+		font-size: 24px
+		font-weight: 400
+		letter-spacing: 0.15px
+		margin-top: 8px
+		line-height: 1.2
+
+		a
+			color: $gray
+
+	&__descr
+		+markpro
+		line-height: 1.57
+		color: $gray
+		font-size: 14px
+		margin-top: 8px
+
+	&__link-row
+		display: flex
+		justify-content: flex-end
+
+	&__link
+		margin-top: 48px
+		+r(1199)
+			margin-top: 33px
+
