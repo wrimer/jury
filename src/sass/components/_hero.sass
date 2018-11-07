@@ -1,0 +1,134 @@
+.hero
+	height: 900px
+	background: $black url("../img/hero-background.png") no-repeat center
+	background-size: cover
+	min-width: 320px
+	+r(767)
+		height: 568px
+
+	&__container
+
+	&__title
+		margin-top: 242px
+		margin-left: 97px
+		line-height: 0.96
+		+r(1199)
+			margin-left: 0
+		+r(991)
+			margin-top: 157px
+		+r(767)
+			margin-top: 108px
+			text-align: center
+
+	&__video
+		margin-top: 91px
+		+r(991)
+			margin-top: 175px
+		+r(767)
+			margin-top: 49px
+			display: flex
+			justify-content: center
+
+	&__video-link
+		+markpro
+		position: relative
+		font-weight: 700
+		font-size: 14px
+		color: $white
+		text-transform: uppercase
+		margin-left: 97px
+		padding-left: 35px
+		letter-spacing: 2px
+		+r(1199)
+			margin-left: 0
+		&:before
+			left: 0
+			top: -4px
+			position: absolute
+			content: ''
+			display: inline-block
+			width: 16px
+			height: 21px
+			background: url("../img/play-icon.png") no-repeat center
+		&:after
+			content: ''
+			position: absolute
+			bottom: -26px
+			left: 0
+			right: 0
+			height: 1px
+			background-color: $white
+
+
+	&__text
+		position: relative
+		height: 359px
+		width: 359px
+		background-color: $white
+		margin-top: 39px
+		padding: 40px 47px 40px 40px
+		+r(991)
+			margin-top: 123px
+			margin-left: 16px
+		+r(767)
+			height: 210px
+			width: 100%
+			margin-left: 0
+			margin-top: 68px
+			padding: 20px 23px 20px 25px
+			&:before
+				display: none
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: -30px
+			right: -30px
+			border: 2px white solid
+
+
+
+	&__text-title
+		+markpro
+		font-weight: 700
+		font-size: 30px
+		color: $gray
+		line-height: 1.34
+		+r(767)
+			font-size: 24px
+
+	&__text-link
+		font-size: 14px
+		margin-top: 102px
+		font-weight: 700
+		letter-spacing: 2px
+		+r(767)
+			margin-top: 56px
+
+	&__scroll
+
+	&__scroll-text
+		display: inline-block
+		margin-top: 64px
+		position: relative
+		+markpro
+		text-transform: uppercase
+		color: $white
+		font-weight: 400
+		letter-spacing: 2.4px
+		font-size: 8px
+		+r(767)
+			margin-top: 14px
+		&:after, &:before
+			content: ''
+			width: 6px
+			height: 4px
+			position: absolute
+			background: url("../img/arrow-bottom.png") center no-repeat
+		&:before
+			top: 3px
+			left: -14px
+		&:after
+			top: 3px
+			right: -14px
