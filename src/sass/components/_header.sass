@@ -1,0 +1,52 @@
+.header
+
+	&__container
+		padding-top: 52px
+		+r(767)
+			padding-top: 24px
+
+	&__logo
+		.icon
+			margin-left: -4px
+			font-size: 32px
+			fill: $white
+
+	&__nav
+		display: block
+		+r(991)
+			display: none
+
+	&__list
+		display: flex
+		margin-left: 45px
+		+r(1199)
+			margin-left: -34px
+
+	&__item
+		display: flex
+		align-items: center
+
+	&__item-login
+		margin-left: auto
+
+	&__link
+		+markpro
+		color: $white
+		line-height: 1.25
+		padding: 0 20px
+		+r(1199)
+			padding: 0 15.5px
+
+	&__sublist
+		display: none
+
+	&__button
+		margin-left: auto
+
+	&__toggle
+		display: flex
+		justify-content: flex-end
+		.icon
+			fill: $white
+			font-size: 24px
+
