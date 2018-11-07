@@ -11,9 +11,16 @@
 		display: inline-block
 		background-color: $pink
 		padding: 10px 30px
+		&:after
+ 			background-color: $white
+
+	&_pink_lg
+		padding: 20px 23px
 
 	&_blue
 		color: $blue
+		&:after
+			background-color: $blue
 
 	&_decorated
 		display: flex
@@ -25,7 +32,6 @@
 			display: inline-block
 			width: 30px
 			height: 1px
-			background-color: $blue
 
 	&_decorated_sm
 		&:after
