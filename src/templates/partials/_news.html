@@ -1,0 +1,29 @@
+<section class="news">
+  <div class="news__container container">
+    <div class="row">
+      <div class="col-sm-12 xol-xs-12">
+        <div class="news__title title">{{ news.title }}</div>
+      </div>
+    </div>
+    <div class="row">
+
+      {% for item in news.list %}
+        <div class="{{ item.style }}">
+          <div class="news__item">
+            <a href="#"><img src="./img/{{ item.image }}" class="news__image" alt="News image"></a>
+            <div class="news__category">{{ item.category }}</div>
+            <div class="news__item-title"><a href="#">{{ item.title }}</a></div>
+            <div class="news__descr">{{ item.descr }}</div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 news__link-row">
+        <a class="news__link button button_decorated button_decorated_sm button_blue" href="#">{{ news.button }}</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

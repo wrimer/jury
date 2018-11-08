@@ -13,8 +13,9 @@ title: Index page
   {% include "partials/_hero.html" %}
   {# end hero #}
 
+  {% import 'data/index-news-data.html' as news %}
   {# begin news #}
-  {% include "partials/_latest-news.html" %}
+  {% include "partials/_news.html" %}
   {# end news #}
 
   {% import 'data/investors-advantages-data.html' as advantages %}
