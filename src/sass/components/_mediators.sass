@@ -1,0 +1,217 @@
+.mediators
+	background-color: #f1f1f1
+
+	&__container
+
+	&__title
+		margin-top: 147px
+		margin-bottom: 10px
+		+r(991)
+			margin-top: 146px
+			margin-bottom: 63px
+		+r(767)
+			margin-top: 51px
+			margin-bottom: 14px
+
+	&__list
+
+	&__item
+		height: 418px
+		display: flex
+		padding-right: 14px
+		margin-top: 83px
+		+r(1199)
+			height: 351px
+
+	&__item_left
+		flex-direction: row
+
+	&__item_right
+		flex-direction: row-reverse
+
+	&__image
+		flex-shrink: 0
+		width: 327px
+		height: 373px
+		z-index: 1
+		+r(1199)
+			width: 273px
+			height: 311px
+
+	&__image_left
+
+	&__image_right
+
+	&__avatar
+		width: 100%
+		height: 100%
+		object-fit: cover
+		filter: grayscale(100%)
+
+	&__text-wrapper
+		position: relative
+		width: 100%
+		height: 100%
+
+	&__text-wrapper_left
+
+	&__text-wrapper_right
+
+	&__blue
+		position: absolute
+		background-color: $dark-blue
+		height: 274px
+		+r(1199)
+			height: 226px
+
+	&__blue_left
+		top: 31px
+		left: 0
+		right: 38px
+		padding: 27px 0 150px 106px
+		+r(1199)
+			right: 20px
+			padding: 14px 0 150px 59px
+
+	&__blue_right
+		top: 30px
+		left: 0
+		right: 0
+		padding: 26px 0 128px 156px
+		+r(1199)
+			padding: 18px 0 128px 103px
+
+	&__blue-inner
+
+	&__credentials
+
+	&__name
+		+markpro
+		font-size: 38px
+		font-weight: 700
+		color: $white
+
+	&__position
+		+markpro
+		font-size: 20px
+		font-weight: 700
+		color: $white
+
+	&__white
+		background-color: $white
+		position: absolute
+		height: 264px
+		+r(1199)
+			height: 220px
+
+	&__white_left
+		right: 0
+		left: 37px
+		bottom: 0
+		padding: 32px 180px 32px 69px
+		+r(1199)
+			left: 30px
+			padding: 27px 62px 32px 28px
+
+	&__white_right
+		bottom: 0
+		left: 88px
+		right: -52px
+		padding: 31px 180px 31px 70px
+		+r(1199)
+			left: 72px
+			padding: 29px 70px 31px 30px
+
+
+	&__text
+		+markpro
+		font-size: 20px
+		font-weight: 400
+		color: $gray
+		line-height: 1.6
+
+	&__link-row
+		display: flex
+		justify-content: flex-end
+		margin-top: 70px
+		margin-bottom: 117px
+		+r(991)
+			margin-top: 52px
+
+	&__link
+
+	&__card-list
+		display: flex
+		justify-content: space-between
+		+r(767)
+			justify-content: center
+			flex-wrap: wrap
+
+	&__card-item
+		position: relative
+		display: flex
+		flex-direction: column
+		width: 49.8%
+		+r(767)
+			max-width: 468px
+			width: 100%
+			margin-top: 4px
+
+	&__card-avatar
+		width: 100%
+		height: 373px
+		object-fit: cover
+		filter: grayscale(100%)
+		+r(767)
+			height: 302px
+
+	&__card-blue
+		background-color: $dark-blue
+		padding: 20px 20px 27px
+		+r(767)
+			background-color: rgba($dark-blue, .5)
+			position: absolute
+			left: 0
+			right: 0
+			top: 302px
+			transform: translateY(-100%)
+
+	&__card-name
+		+markpro
+		font-size: 24px
+		font-weight: 700
+		color: $white
+		line-height: 1.5
+
+	&__card-position
+		+markpro
+		font-size: 18px
+		font-weight: 700
+		color: $white
+
+	&__card-text
+		background-color: $white
+		+markpro
+		font-size: 16px
+		color: $gray
+		line-height: 1.5
+		padding: 20px 24px 40px
+
+	&__card-links
+		position: absolute
+		display: flex
+		top: 20px
+		left: 20px
+
+	&__card-link
+		margin-right: 15px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 45px
+		height: 45px
+		background-color: $dark-blue
+
+	&__card-social
+
+

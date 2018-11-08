@@ -1,0 +1,65 @@
+{% import 'data/mediators-data.html' as data %}
+<section class="mediators">
+  <div class="mediators__container container">
+    <div class="row">
+      <div class="col-sm-12 xol-xs-12">
+        <h1 class="mediators__title title">Meet Our Mediators</h1>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="col-sm-12 col-xs-12 hidden-sm hidden-xs mediators__list">
+
+        {% for item in data.list %}
+          {% if loop.index % 2 == 1 %}
+            {% set position = 'left' %}
+          {% else %}
+            {% set position = 'right' %}
+          {% endif %}
+          <li class="mediators__item mediators__item_{{ position }}">
+            <div class="mediators__image mediators__image_{{ position }}">
+              <img class="mediators__avatar" src="./img/{{ item.photo }}" alt="Mediator image">
+            </div>
+            <div class="mediators__text-wrapper mediators__text-wrapper_{{ position }}">
+              <div class="mediators__blue mediators__blue_{{ position }}">
+                <div class="mediators__blue-inner">
+                  <div class="mediators__credentials">
+                    <p class="mediators__name">{{ item.name }}</p>
+                    <p class="mediators__position">{{ item.position }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mediators__white mediators__white_{{ position }}">
+                <p class="mediators__text">{{ item.text }}</p>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="col-sm-12 col-xs-12 hidden-md hidden-lg mediators__card-list">
+
+        {% for i in range(0,2) %}
+          {% set item = data.list[i] %}
+          <li class="mediators__card-item">
+            <img src="./img/{{ item.photo }}" alt="Mediator image" class="mediators__card-avatar">
+            <div class="mediators__card-blue">
+              <p class="mediators__card-name">{{ item.name }}</p>
+              <p class="mediators__card-position">{{ item.position }}</p>
+            </div>
+            <p class="mediators__card-text">{{ item.text }}</p>
+            <div class="mediators__card-links">
+              <a href="#" class="mediators__card-link"><img src="./img/twitter.png" class="mediators__card-social"></a>
+              <a href="#" class="mediators__card-link"><img src="./img/linkedin.png" class="mediators__card-social"></a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 mediators__link-row">
+        <a class="mediators__link button button_decorated button_decorated_sm button_blue" href="#">Explore all</a>
+      </div>
+    </div>
+  </div>
+</section>
+
