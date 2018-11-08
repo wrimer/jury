@@ -1,0 +1,74 @@
+.subscribe
+	position: relative
+	background-color: $light-gray
+	padding-top: 112px
+	&:before
+		content: ''
+		position: absolute
+		height: 90px
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $dark-blue
+	+r(1199)
+		padding-top: 120px
+		&:before
+			height: 99px
+	+r(767)
+		padding-top: 76px
+
+	&__container
+
+	&__newsletter
+		width: 555px
+		height: 551px
+		margin: 0 auto
+		background-color: $white
+		padding: 75px 75px 90px
+		+r(767)
+			width: 100%
+			height: 352px
+			padding: 27px 18px 0
+
+	&__form
+		position: relative
+		margin-top: 75px
+		+r(767)
+			margin-top: 58px
+
+
+	&__input
+		width: 100%
+		padding-left: 10px
+		padding-right: 10px
+		+markpro
+		font-weight: 400
+		color: $gray
+		font-size: 24px
+		&::placeholder
+			color: $gray
+		+r(767)
+			padding: 0
+
+	&__label
+		width: 100%
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			height: 1px
+			background-color: rgba($gray, 0.2)
+			margin-top: 14px
+
+	&__title
+		line-height: 1
+
+	&__button-row
+		display: flex
+		justify-content: flex-end
+		margin-top: 106px
+		+r(767)
+			margin-top: 116px
+
+	&__button
