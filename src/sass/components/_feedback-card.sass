@@ -1,0 +1,73 @@
+.feedback-card
+	display: flex
+	justify-content: space-between
+	+r(767)
+		justify-content: center
+		flex-wrap: wrap
+
+	&__card-item
+		position: relative
+		display: flex
+		flex-direction: column
+		width: 49.8%
+		+r(767)
+			max-width: 468px
+			width: 100%
+			margin-top: 4px
+
+	&__card-avatar
+		width: 100%
+		height: 373px
+		object-fit: cover
+		filter: grayscale(100%)
+		+r(767)
+			height: 302px
+
+	&__card-blue
+		background-color: $dark-blue
+		padding: 20px 20px 27px
+		+r(767)
+			background-color: rgba($dark-blue, .5)
+			position: absolute
+			left: 0
+			right: 0
+			top: 302px
+			transform: translateY(-100%)
+
+	&__card-name
+		+markpro
+		font-size: 24px
+		font-weight: 700
+		color: $white
+		line-height: 1.5
+
+	&__card-position
+		+markpro
+		font-size: 18px
+		font-weight: 700
+		color: $white
+
+	&__card-text
+		background-color: $white
+		+markpro
+		font-size: 16px
+		color: $gray
+		line-height: 1.5
+		padding: 20px 24px 40px
+
+	&__card-links
+		position: absolute
+		display: flex
+		top: 20px
+		left: 20px
+
+	&__card-link
+		margin-right: 15px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 45px
+		height: 45px
+		background-color: $dark-blue
+
+	&__card-social

@@ -1,0 +1,101 @@
+.feedback
+	height: 418px
+	display: flex
+	padding-right: 14px
+	+r(1199)
+		height: 351px
+
+	&_left
+		flex-direction: row
+
+	&_right
+		flex-direction: row-reverse
+
+	&__image
+		flex-shrink: 0
+		width: 327px
+		height: 373px
+		z-index: 1
+		+r(1199)
+			width: 273px
+			height: 311px
+
+	&__avatar
+		width: 100%
+		height: 100%
+		object-fit: cover
+		filter: grayscale(100%)
+
+	&__text-wrapper
+		position: relative
+		width: 100%
+		height: 100%
+
+	&__blue
+		position: absolute
+		background-color: $dark-blue
+		height: 274px
+		+r(1199)
+			height: 226px
+
+	&__blue_left
+		top: 31px
+		left: 0
+		right: 38px
+		padding: 27px 0 150px 106px
+		+r(1199)
+			right: 20px
+			padding: 14px 0 150px 59px
+
+	&__blue_right
+		top: 30px
+		left: 0
+		right: 0
+		padding: 26px 0 128px 156px
+		+r(1199)
+			padding: 18px 0 128px 103px
+
+	&__name
+		+markpro
+		font-size: 38px
+		font-weight: 700
+		color: $white
+
+	&__position
+		+markpro
+		font-size: 20px
+		font-weight: 700
+		color: $white
+
+	&__white
+		background-color: $white
+		position: absolute
+		height: 264px
+		+r(1199)
+			height: 220px
+
+	&__white_left
+		right: 0
+		left: 37px
+		bottom: 0
+		padding: 32px 180px 32px 69px
+		+r(1199)
+			left: 30px
+			padding: 27px 62px 32px 28px
+
+	&__white_right
+		bottom: 0
+		left: 88px
+		right: -52px
+		padding: 31px 180px 31px 70px
+		+r(1199)
+			left: 72px
+			padding: 29px 70px 31px 30px
+
+
+	&__text
+		+markpro
+		font-size: 20px
+		font-weight: 400
+		color: $gray
+		line-height: 1.6

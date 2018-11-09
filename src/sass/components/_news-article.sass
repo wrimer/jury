@@ -1,0 +1,42 @@
+.news-article
+	height: 364px
+	+r(767)
+		height: 324px
+
+	&__image
+		width: 100%
+		object-fit: cover
+		height: 200px
+		+r(1199)
+			height: 162px
+		+r(767)
+			height: 185px
+
+	&__category
+		+markpro
+		color: $blue
+		font-size: 12px
+		font-weight: 400
+		letter-spacing: 2px
+		text-transform: uppercase
+		margin-top: 16px
+		+r(991)
+			margin-top: 10px
+
+	&__item-title
+		+financier
+		font-size: 24px
+		font-weight: 400
+		letter-spacing: 0.15px
+		margin-top: 8px
+		line-height: 1.2
+
+		a
+			color: $gray
+
+	&__descr
+		+markpro
+		line-height: 1.57
+		color: $gray
+		font-size: 14px
+		margin-top: 8px

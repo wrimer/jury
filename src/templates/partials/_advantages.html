@@ -1,29 +1,25 @@
 <section class="advantages">
   <div class="advantages__container container{% if advantages.nopadding %}-inner {% endif %}">
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="advantages__row row">
+      <div class="advantages__col col-xs-12">
         <p class="advantages__title title">{{ advantages.title }}</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 ">
+    <div class="advantages__row row">
+      <div class="advantages__col col-xs-12 ">
         <ul class="advantages__list">
           {% for item in advantages.list %}
-            <li class="advantages__item col-sm-4 col-xs-12 nopadding">
-              <img class="advantages__image" src="./img/{{ item.image }}" alt="advantage image">
-              <p class="advantages__text">{{ item.text }}</p>
+            <li class="advantages__item advantage col-sm-4 col-xs-12 nopadding">
+              <img class="advantage__image" src="./img/{{ item.image }}" alt="advantage image">
+              <p class="advantage__text">{{ item.text }}</p>
             </li>
           {% endfor %}
         </ul>
       </div>
     </div>
-    {#<div class="row next-link-red-row">#}
-    {#<div class="col-xs-12">#}
-    {#<a class="next-link-red pull-right" href="#">{{ advantages.button }}</a>#}
-    {#</div>#}
 
-    <div class="row">
-      <div class="col-sm-12 col-xs-12 advantages__button-row ">
+    <div class="advantages__row row">
+      <div class="advantages__col col-sm-12 col-xs-12 advantages__button-row ">
         <a class="advantages__link button button_decorated button_decorated_sm button_pink button_pink_lg" href="#">{{ advantages.button }}</a>
       </div>
     </div>
