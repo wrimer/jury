@@ -3,22 +3,23 @@
 	background: $black url("../img/index-hero-bg.jpg") no-repeat center
 	background-size: cover
 	min-width: 320px
+	padding-top: 242px
+	padding-bottom: 28px
+	+r(991)
+		padding-top: 157px
 	+r(767)
 		height: 568px
+		padding-top: 108px
 
 	&__container
+		height: 100%
 
 	&__title
-		margin-top: 242px
 		margin-left: 97px
 		line-height: 0.96
 		+r(1199)
 			margin-left: 0
-		+r(991)
-			margin-top: 157px
 		+r(767)
-			margin-top: 108px
-			text-align: center
 
 	&__video
 		margin-top: 91px
@@ -26,8 +27,6 @@
 			margin-top: 175px
 		+r(767)
 			margin-top: 49px
-			display: flex
-			justify-content: center
 
 	&__video-link
 		+markpro

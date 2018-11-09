@@ -1,16 +1,22 @@
 .mediators
 	background-color: #f1f1f1
+	padding-top: 150px
+	padding-bottom: 120px
+	margin-bottom: 75px
+	min-width: 320px
+	+r(767)
+		padding-top: 50px
+		padding-bottom: 50px
+		margin-bottom: 25px
+
 
 	&__container
 
 	&__title
-		margin-top: 147px
 		margin-bottom: 10px
 		+r(991)
-			margin-top: 146px
 			margin-bottom: 63px
 		+r(767)
-			margin-top: 51px
 			margin-bottom: 14px
 
 	&__list
@@ -18,18 +24,14 @@
 	&__item
 		margin-top: 83px
 
-	&__link-row
+	&__col-link
 		display: flex
 		justify-content: flex-end
-		margin-top: 70px
-		margin-bottom: 117px
-		+r(991)
-			margin-top: 52px
-		+r(767)
-			margin-bottom: 50px
-
 
 	&__link
+		margin-top: 70px
+		+r(991)
+			margin-top: 52px
 
 	&__card-list
 

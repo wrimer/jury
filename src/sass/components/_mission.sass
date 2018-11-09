@@ -2,12 +2,19 @@
 	height: 900px
 	background: $dark-blue url("../img/mission-background.png") no-repeat center
 	background-size: cover
+	padding-top: 174px
+	padding-bottom: 176px
+	min-width: 320px
 	+r(1199)
 		height: 753px
+		padding-top: 101px
+		padding-bottom: 115px
 	+r(767)
 		height: 251px
 		position: relative
 		z-index: 1
+		padding-top: 24px
+		padding-bottom: 0
 
 	&__container
 		height: 100%
@@ -19,11 +26,7 @@
 
 	&__title
 		text-align: center
-		margin-top: 174px
-		+r(1199)
-			margin-top: 101px
-		+r(767)
-			margin-top: 24px
+
 
 	&__text-wrapper
 		position: relative
