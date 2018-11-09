@@ -1,6 +1,8 @@
 .header
+	transition: 600ms
 	position: absolute
 	width: 100%
+	min-width: 320px
 	z-index: 1
 
 	&__container
@@ -15,43 +17,51 @@
 			fill: $white
 
 	&__nav
-		display: block
-		+r(991)
-			display: none
-
-	&__list
-		display: flex
-		margin-left: 45px
-		+r(1199)
-			margin-left: -34px
-
-	&__item
-		display: flex
-		align-items: center
-
-	&__item-login
-		margin-left: auto
-
-	&__link
-		+markpro
-		color: $white
-		line-height: 1.25
-		padding: 0 20px
-		+r(1199)
-			padding: 0 15.5px
-
-	&__sublist
-		display: none
-
-	&__button
-		margin-left: auto
 
 	&__toggle
+		width: 33px
+		height: 24px
+		cursor: pointer
+
+	&__toggle-container
 		display: none
 		justify-content: flex-end
-		.icon
-			fill: $white
-			font-size: 24px
 		+r(991)
 			display: flex
+
+	&__toggle-lines
+		transition: 600ms
+		position: relative
+		display: flex
+		height: 2px
+		width: 33px
+		background-color: $white
+		margin-top: 11px
+		&:before, &:after
+			transition: 600ms
+			content: ''
+			position: absolute
+			width: 33px
+			height: 2px
+			background-color: $white
+		&:before
+			top: 11px
+		&:after
+			bottom: 11px
+	//Opened menu state
+	&_opened
+		position: fixed
+		background-color: $purple
+		width: 100%
+		height: 100%
+
+		.header__toggle-lines
+			background-color: transparent
+			&:after
+				top: 0
+				transform: rotate(45deg)
+			&:before
+				top: 0
+				transform: rotate(-45deg)
+
 
