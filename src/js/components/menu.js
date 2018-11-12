@@ -1,51 +1,34 @@
 var header = $('.js-menu-header');
 var nav = $('.js-menu-nav');
 var toggle = $('.js-menu-toggle');
-
-var navAbout = $('.nav__item-about');
-var navNews = $('.nav__item-news');
-var navService = $('.nav__item-services');
-navAbout.linkId = '#about';
-navNews.linkId = '#news';
-navService.linkId = '#services';
+var items = $('.js-menu-item');
+// var items = $('.nav__item-collapse');
 
 
 function initNav() {
-  if ($(window).outerWidth() > 991) {
-    initDropwond(navAbout);
-    initDropwond(navNews);
-    initDropwond(navService);
-  } else {
-    initCollapse(navAbout);
-    initCollapse(navNews);
-    initCollapse(navService);
+  function initNavItems(item) {
+    if ($(window).outerWidth() > 991 && !item.hasClass('nav__item-dropdown')) {
+      item.removeClass('nav__item-collapse nav__item-collapse-opened');
+      item.addClass('nav__item-dropdown');
+    }
+    if ($(window).outerWidth() <= 991 && !item.hasClass('nav__item-collapse')) {
+      item.removeClass('nav__item-dropdown');
+      item.addClass('nav__item-collapse');
+    }
   }
+
+  items.each(function() {
+    initNavItems($(this));
+  });
+  // item.click(function() {
+  // });
 }
 
-function initDropwond(object) {
-  object.find('.nav__link').removeAttr('href');
-  object.find('.nav__link').removeAttr('data-toggle');
-  object.find('.nav__sublist-wrapper').removeClass('collapse');
-
-  object.addClass('dropdown');
-  object.find('.nav__link').addClass('dropdown-toggle');
-  object.find('.nav__link').attr('data-toggle', 'dropdown');
-  object.find('.nav__sublist-wrapper').addClass('dropdown-menu');
-}
-
-function initCollapse(object) {
-  object.removeClass('dropdown');
-  object.removeClass('open');
-  object.find('.nav__link').removeClass('dropdown-toggle');
-  object.find('.nav__link').removeAttr('data-toggle');
-  object.find('.nav__sublist-wrapper').removeClass('dropdown-menu');
-
-  object.find('.nav__link').attr('href', object.linkId);
-  object.find('.nav__link').attr('data-toggle', 'collapse');
-  object.find('.nav__sublist-wrapper').addClass('collapse');
-
-}
-
+items.each(function() {
+  $(this).click(function() {
+    $(this).toggleClass('nav__item-collapse-opened');
+  });
+});
 toggle.click(function() {
   header.toggleClass('header_opened');
   nav.toggleClass('nav_opened');
@@ -60,4 +43,5 @@ $(window).on('resize', function() {
 
 
 $(document).ready(initNav);
+
 $(window).on('resize', initNav);

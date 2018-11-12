@@ -13,8 +13,55 @@
 			margin-left: -34px
 
 	&__item
+		position: relative
 		display: flex
 		align-items: center
+		justify-content: center
+		flex-direction: column
+
+	&__item-dropdown
+		&:hover .nav__sublist-wrapper
+			display: block
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateY(100%) translateX(-50%)
+			width: 150px
+
+	&__item-collapse
+		.nav__sublist-wrapper
+			height: 0
+			opacity: 0
+
+	&__item-collapse-opened
+		.nav__sublist-wrapper
+			display: block
+			width: 100%
+			padding-left: 15px
+			height: auto
+			opacity: 1
+		.nav__link
+			&:after
+				display: none
+
+
+	&__sublist-wrapper
+		display: none
+		transition: 1s
+
+
+	&__sublist
+		background-color: $purple
+
+	&__sublist-item
+
+		&:not(:last-child)
+			border-bottom: 1px rgba($white, .1) solid
+
+	&__sublist-link
+		display: block
+		padding: 15px
+		color: $white
 
 	&__login
 		margin-left: auto
@@ -28,8 +75,6 @@
 		padding: 0 20px
 		+r(1199)
 			padding: 0 15.5px
-
-	&__sublist-wrapper
 
 	&__button
 		margin-left: auto
@@ -48,6 +93,7 @@
 			.nav__item
 				position: relative
 				flex-direction: column
+
 				&:after
 					position: absolute
 					content: ''
@@ -65,15 +111,18 @@
 				font-size: 14px
 				font-weight: 700
 				letter-spacing: 2px
-				&:before,&:after
+
+				&:before, &:after
 					content: ''
 					position: absolute
 					width: 13px
 					height: 1px
 					background-color: $white
+
 				&:before
 					right: 0
 					top: 50%
+
 				&:after
 					right: 0
 					top: 50%
