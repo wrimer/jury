@@ -18,6 +18,7 @@
 		align-items: center
 		justify-content: center
 		flex-direction: column
+		cursor: pointer
 
 	&__item-dropdown
 		&:hover .nav__sublist-wrapper
@@ -75,6 +76,10 @@
 		padding: 0 20px
 		+r(1199)
 			padding: 0 15.5px
+		+hover
+			color: rgba($white, .5)
+			text-decoration: underline
+
 
 	&__button
 		margin-left: auto

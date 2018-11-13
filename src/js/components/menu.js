@@ -2,6 +2,7 @@ var header = $('.js-menu-header');
 var nav = $('.js-menu-nav');
 var toggle = $('.js-menu-toggle');
 var items = $('.js-menu-item');
+
 // var items = $('.nav__item-collapse');
 
 
@@ -26,8 +27,11 @@ function initNav() {
 
 items.each(function() {
   $(this).click(function() {
-    $(this).toggleClass('nav__item-collapse-opened');
+    if ($(this).hasClass('nav__item-collapse')) {
+      $(this).toggleClass('nav__item-collapse-opened');
+    }
   });
+
 });
 toggle.click(function() {
   header.toggleClass('header_opened');

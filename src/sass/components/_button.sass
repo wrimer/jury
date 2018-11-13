@@ -12,7 +12,10 @@
 		background-color: $pink
 		padding: 10px 30px
 		&:after
- 			background-color: $white
+			background: url("../img/arrow-white.svg")no-repeat
+		+hover
+			&:after
+				opacity: .5
 
 	&_pink_lg
 		padding: 20px 23px
@@ -20,18 +23,24 @@
 	&_blue
 		color: $blue
 		&:after
-			background-color: $blue
+			background: url("../img/arrow-blue.svg")no-repeat
+		+hover
+			color: rgba($blue, .7)
+			&:after
+				opacity: .7
+
+
 
 	&_decorated
+		position: relative
 		display: flex
 		align-items: center
-		position: relative
 		&:after
 			margin-left: 21px
 			content: ''
 			display: inline-block
-			width: 30px
-			height: 1px
+			width: 33px
+			height: 11px
 
 	&_decorated_sm
 		&:after

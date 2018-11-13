@@ -1,0 +1,142 @@
+.footer
+	+markpro
+	background-color: $purple
+	color: white
+	padding-top: 137px
+	padding-bottom: 74px
+	+r(1199)
+		padding-top: 130px
+	+r(767)
+		padding-top: 50px
+
+	&__row
+
+	&__container
+
+	&__col-menu
+		display: flex
+		+r(1199)
+			flex-wrap: wrap
+
+	&__logo
+		margin-right: 64px
+		+r(1199)
+			width: 100%
+			margin-bottom: 50px
+		+r(991)
+			margin-bottom: 10px
+
+	&__menu
+		min-width: 135px
+		+r(1199)
+			min-width: 174px
+		+r(991)
+			width: 100%
+
+	&__menu-title
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 14px
+		letter-spacing: 2px
+		margin-bottom: 40px
+		color: $white
+
+	&__menu-wrapper
+
+	&__menu-list
+
+	&__menu-item
+
+	&__menu-link
+		+markpro
+		font-size: 14px
+		font-weight: 400
+		display: block
+		margin-top: 18px
+		color: $white
+
+	&__social
+		display: flex
+		justify-content: flex-end
+		+r(991)
+			max-width: 480px
+			flex-wrap: wrap
+			justify-content: flex-start
+
+	&__social-link
+		margin-left: 15px
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 45px
+		height: 45px
+		background-color: $dark-purple
+		flex-shrink: 0
+		+r(991)
+			margin-left: 0
+			margin-right: 15px
+		+hover
+			opacity: .7
+
+	&__col-social
+		+r(991)
+			margin-top: 50px
+			display: flex
+			justify-content: space-between
+		+r(767)
+			display: block
+
+
+	&__copyrights
+		opacity: .5
+		font-size: 14px
+		text-align: end
+		margin-top: 42px
+		+r(991)
+			margin-top: 0
+			width: 201px
+		+r(767)
+			margin-top: 42px
+			text-align: left
+
+
+//		collapse
+
+.footer__menu-collapse
+	position: relative
+	cursor: pointer
+	&::before, &::after
+		transition: 400ms
+		content: ''
+		position: absolute
+		width: 13px
+		height: 1px
+		background-color: $white
+		top: 22px
+		right: 0
+	&::after
+		transform: rotate(-90deg)
+
+	.footer__menu-wrapper
+		display: none
+		height: 0
+
+	.footer__menu-title
+		padding: 13px 0
+		margin-bottom: 0
+		border-bottom: 1px rgba($white, 0.1) solid
+		+hover
+			text-decoration: underline
+			color: rgba($white, .5)
+
+
+.footer__menu-collapse_opened
+	&::after
+		transform: rotate(0)
+	.footer__menu-wrapper
+		display: block
+		height: auto
+		margin-bottom: 24px
+
+	.footer__menu-title
+		border-bottom: none
