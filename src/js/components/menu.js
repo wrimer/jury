@@ -49,3 +49,13 @@ $(window).on('resize', function() {
 $(document).ready(initNav);
 
 $(window).on('resize', initNav);
+
+$(window).scroll(function() {
+  var fromTopPx = 150; // distance to trigger
+  var scrolledFromtop = jQuery(window).scrollTop();
+  if(scrolledFromtop > fromTopPx) {
+    header.addClass('header_scrolled');
+  }else{
+    header.removeClass('header_scrolled');
+  }
+});

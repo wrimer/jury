@@ -1,14 +1,19 @@
 .header
 	transition: 600ms
-	position: absolute
+	position: fixed
 	width: 100%
 	min-width: 320px
 	z-index: 1
+	padding-top: 52px
+	padding-bottom: 52px
+	+r(767)
+		padding-top: 24px
+		padding-bottom: 24px
+
+	&_scrolled
+		background-color: $purple
 
 	&__container
-		padding-top: 52px
-		+r(767)
-			padding-top: 24px
 
 	&__logo
 		.icon
@@ -58,7 +63,7 @@
 		.header__toggle-lines
 			background-color: transparent
 			&:after
-				top: 0
+				bottom: 0
 				transform: rotate(45deg)
 			&:before
 				top: 0
