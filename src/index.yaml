@@ -2,4 +2,7 @@ ProjectTitle: template
 
 PageList:
 - file: main.html
-  ready: 50
+  ready: 80
+- file: about.html
+  ready: 80
+
