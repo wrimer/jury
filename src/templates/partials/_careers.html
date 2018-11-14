@@ -1,0 +1,20 @@
+{% import 'data/careers-data.html' as data %}
+<section class="careers">
+  <div class="careers__container container">
+    <div class="careers__row row">
+      <div class="careers__col col-md-12">
+        <h2 class="careers__title title">Careers</h2>
+      </div>
+    </div>
+    <ul class="careers__list">
+      {% for item in data.list %}
+        <li class="careers__item career-card">
+          <h3 class="career-card__title">{{ item.title }}</h3>
+          <p class="career-card__descr">{{ item.text }}</p>
+          <a href="#" class="career-card__button button button_decorated button_rosy">Contact us</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</section>

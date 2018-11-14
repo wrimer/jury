@@ -1,0 +1,60 @@
+.romb-images
+	display: flex
+	justify-content: space-around
+	flex-direction: row-reverse
+	padding-top: 120px
+	padding-bottom: 120px
+	+r(1199)
+		padding-top: 80px
+		padding-bottom: 80px
+	+r(991)
+		padding-top: 78px
+		padding-bottom: 78px
+	+r(767)
+		flex-direction: column-reverse
+		align-items: center
+
+	&__wrapper
+		position: relative
+		width: 25%
+		padding-top: 25%
+		background-color: rgba($light-gray, .5)
+		transform: rotate(-45deg)
+		overflow: hidden
+		border: 10px $white solid
+		box-sizing: content-box
+		+r(991)
+			border-width: 5px
+		+r(767)
+			width: 185px
+			height: 185px
+			padding-top: 0
+			margin-bottom: 24px
+
+
+	&__wrapper-inner
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%) rotate(45deg)
+		width: 141%
+		height: 141%
+
+
+	&__image
+		width: 100%
+		height: 100%
+
+	&__text
+		width: 65%
+		+markpro
+		text-align: center
+		color: $white
+		font-size: 21px
+		font-weight: 700
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+		+r(991)
+			font-size: 16px

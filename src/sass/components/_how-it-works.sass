@@ -1,11 +1,21 @@
 .how-it-works
-	background-color: $light-gray
+	position: relative
 	color: $gray
+	min-width: 320px
 	+markpro
 
 	&__wrapper
 		padding-top: 90px
 		padding-bottom: 120px
+		margin-top: -163px
+		margin-bottom: -75px
+		+r(991)
+			padding-top: 76px
+		+r(767)
+			margin-top: -75px
+			padding-top: 60px
+			padding-bottom: 70px
+			margin-bottom: -16px
 
 	&__title
 		text-align: center
@@ -14,12 +24,19 @@
 		display: flex
 		justify-content: space-between
 		margin-top: 6px
+		+r(767)
+			flex-wrap: wrap
 
 	&__text
 		width: 49%
 		font-size: 21px
 		line-height: 1.46
 		letter-spacing: -1px
+		+r(767)
+			width: 100%
+			font-size: 16px
+
+	&__images
 
 	&__list
 
@@ -27,6 +44,8 @@
 		display: flex
 		justify-content: space-between
 		margin-bottom: 50px
+		+r(991)
+			flex-wrap: wrap
 
 	&__item-title
 		position: relative
@@ -43,11 +62,23 @@
 			width: 52px
 			height: 2px
 			background-color: #003580
+		+r(991)
+			width: 100%
+			padding-bottom: 20px
+			&:after
+				bottom: 0
+
+
 
 	&__descr
 		font-size: 21px
 		line-height: 1.46
 		width: 57%
+		+r(991)
+			width: 100%
+			margin-top: 12px
 
 	&__button
-
+		+r(767)
+			&:after
+				margin-left: 12px

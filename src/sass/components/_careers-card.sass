@@ -1,0 +1,32 @@
+.career-card
+	background-color: $white
+	padding: 50px 22px
+	width: calc(33.3% - 30px)
+	margin-left: 30px
+	margin-top: 30px
+	min-height: 440px
+	display: flex
+	flex-direction: column
+	+r(1199)
+		min-height: 477px
+	+r(991)
+		width: calc(50% - 30px)
+		min-height: 435px
+	+r(767)
+		width: 100%
+		margin-left: 0
+		min-height: 477px
+		margin-top: 10px
+
+	&__title
+		+markpro
+		font-weight: 700
+		font-size: 24px
+
+	&__descr
+		margin-top: 16px
+		+markpro
+		font-size: 24px
+
+	&__button
+		margin-top: auto
