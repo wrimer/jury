@@ -5,7 +5,7 @@ $('.js-flip-controls').each(function(index) {
   $(this).find('.js-slider-next').addClass('js-slider-next-' + index);
 });
 
-$('.js-slider').each(function( index ) {
+$('.js-slider').each(function(index) {
 
   $(this).slick({
     slidesToShow: 3,
@@ -16,7 +16,7 @@ $('.js-slider').each(function( index ) {
     infinite: false,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1200,
         settings: {
           slidesToScroll: 1,
           slidesToShow: 2

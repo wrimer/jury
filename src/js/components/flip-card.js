@@ -16,6 +16,7 @@ $('.js-slider').on('breakpoint', function(slick) {
   flipItems = $('.js-flip');
   initFlipCards();
 });
+
 $(document).ready(function() {
   flipItems = $('.js-flip');
   initFlipCards();
