@@ -9,14 +9,30 @@ title: Index page
   {% include "partials/_header.html" %}
   {# end header #}
 
-  {% include "partials/_about-hero.html" %}
-  {% include "partials/_about-hero.html" %}
-
+  {% import 'data/hero-services-data.html' as about %}
+  {# begin hero #}
+  {% include "partials/hero-block.html" %}
+  {# end hero #}
 
   {% import 'data/service-technology-data.html' as service %}
   {# begin service #}
   {% include "partials/_service.html" %}
   {# end service #}
+
+  {% import 'data/service-marketing-data.html' as service %}
+  {# begin service #}
+  {% include "partials/_service.html" %}
+  {# end service #}
+
+  {% import 'data/service-cooperation-data.html' as service %}
+  {# begin service #}
+  {% include "partials/_service.html" %}
+  {# end service #}
+
+  {% import 'data/about-services-data.html' as data %}
+  {# begin about-info #}
+  {% include "partials/_about.html" %}
+  {# end about-info #}
 
   {# begin subscribe #}
   {% include "partials/_footer.html" %}

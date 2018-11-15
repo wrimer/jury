@@ -1,0 +1,51 @@
+.about
+	height: 900px
+	padding-top: 262px
+	padding-bottom: 280px
+	min-width: 320px
+	+r(991)
+		padding-top: 174px
+		padding-bottom: 136px
+	+r(767)
+		padding-top: 149px
+		padding-bottom: 183px
+		height: 568px
+	+r(480)
+		padding-top: 75px
+
+	&__container
+		height: 100%
+
+	&__text
+		+markpro
+		font-size: 21px
+		font-weight: 700
+		line-height: 1.33
+		color: $white
+		text-align: center
+		+r(767)
+			font-size: 16px
+
+	&__title
+		text-align: center
+		padding: 0 40px
+		+r(1199)
+			font-size: 60px
+		+r(767)
+			padding: 0
+
+	&__row
+		height: 100%
+
+	&__col
+
+	&__text-wrapper
+		height: 100%
+		display: flex
+		flex-direction: column
+
+	&__button-row
+		margin-top: auto
+
+	&__button
+		display: inline

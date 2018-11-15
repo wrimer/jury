@@ -1,0 +1,18 @@
+<section class="about" style="background: url('./img/{{ data.list.background }}') no-repeat center; background-size: cover">
+  <div class="about__container container">
+    <div class="about__row row">
+      <div class="about__col about__text-wrapper col-sm-12">
+        <p class="about__title title title_white">{{ data.list.title }}</p>
+        {% if data.list.text %}
+          <p class="about__text ">{{ data.list.text }}</p>
+        {% endif %}
+        <div class="mission__row row about__button-row">
+          <div class="about__col col-sm-12 col-xs-12 text-center">
+            <a class="about__button button button_decorated button_pink button_pink_lg"
+               href="#">{{ data.list.button }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

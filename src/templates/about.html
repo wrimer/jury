@@ -9,16 +9,18 @@ title: Index page
   {% include "partials/_header.html" %}
   {# end header #}
 
+  {% import 'data/hero-about-data.html' as about %}
   {# begin hero #}
-  {% include "partials/_about-hero.html" %}
+  {% include "partials/hero-block.html" %}
   {# end hero #}
 
   {# begin how-it-works #}
   {% include "partials/_how-it-works.html" %}
   {# end how-it-works #}
 
+  {% import 'data/about-info-data.html' as data %}
   {# begin about-info #}
-  {% include "partials/_about-info.html" %}
+  {% include "partials/_about.html" %}
   {# end about-info #}
 
   {# begin careers #}

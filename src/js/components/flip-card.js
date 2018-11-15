@@ -12,5 +12,13 @@ function initFlipCards() {
   });
 }
 
-$(document).ready(initFlipCards());
+$(window).on('resize', function() {
+  flipItems = $('.js-flip');
+  initFlipCards();
+});
+
+$(document).ready(function() {
+  flipItems = $('.js-flip');
+  initFlipCards();
+});
 
