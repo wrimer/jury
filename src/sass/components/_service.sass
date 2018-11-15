@@ -1,0 +1,74 @@
+.service
+	padding-top: 90px
+	padding-bottom: 68px
+	background-color: $white
+
+	&__container
+
+	&__row
+
+	&__col
+
+	&__col-cards
+		margin-top: 13px
+
+	&__title
+
+	&__card
+
+	&__controls
+		display: flex
+		margin-top: 60px
+
+	&__underline
+		width: 100%
+		position: relative
+		margin-right: 48px
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			top: 50%
+			background-color: $blue
+
+
+	&__prev, &__next
+		+markpro
+		font-weight: 600
+		font-size: 12px
+		letter-spacing: 1.5px
+		padding: 0 10px
+		background: none
+		color: $blue
+		+hover
+			opacity: .7
+
+	&__prev
+		position: relative
+		display: flex
+		padding-left: 43px
+		+hover
+		&:before
+			position: absolute
+			content: ''
+			width: 30px
+			height: 2px
+			top: 50%
+			left: 0
+			background-color: $blue
+
+
+	&__next
+		padding-right: 43px
+		position: relative
+		display: flex
+		&:after
+			position: absolute
+			content: ''
+			width: 30px
+			height: 2px
+			top: 50%
+			right: 0
+			background-color: $blue
+

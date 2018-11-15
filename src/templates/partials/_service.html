@@ -1,0 +1,54 @@
+<section class="service">
+  <div class="service__container container">
+    <div class="service__row row">
+      <div class="service__col col-md-12">
+        <h2 class="service__title title">{{ service.title }}</h2>
+      </div>
+    </div>
+    <div class="service__row row">
+      <div class="service__col service__col-cards  col-md-12 js-slider">
+
+        {% for item in service.list %}
+          <div class="service__card flip-card js-flip">
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="flip-card__body">
+                  <div class="flip-card__front-title">{{ item.title }}</div>
+                  <div class="flip-card__front-descr">{{ item.frontDescr }}</div>
+                  <button href="#" class="flip-card__front-button button button_blue button_decorated js-flip-card-open">See Details</button>
+                </div>
+              </div>
+              <div class="flip-card__back">
+                <div class="flip-card__body">
+                  <div class="flip-card__top">
+                    <div class="flip-card__back-title">{{ item.title }}</div>
+                    <div class="flip-card__close js-flip-card-close"></div>
+                  </div>
+                  <div class="flip-card__back-descr">{{ item.backDescr }}</div>
+                  <ul class="flip-card__back-list">
+                    {% for detail in item.backList %}
+                      <li class="flip-card__back-item">
+                        <p class="flip-card__back-text">{{ detail }}</p>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  <a href="#" class="flip-card__back-button button button_pink button_pink_lg">Find my best plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+    <div class="service__row row">
+      <div class="service-col service__controls col-md-12">
+        <div class="service__underline"></div>
+        <button href="#" class="service__prev js-slider-prev">prev</button>
+        <button href="#" class="service__next js-slider-next">next</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
