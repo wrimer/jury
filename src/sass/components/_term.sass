@@ -1,0 +1,41 @@
+.term
+	width: 33%
+
+	&__body
+		width: 100%
+		height: 100%
+		padding: 40px 18px
+		background-color: $white
+
+	&__title
+		position: relative
+		+markpro
+		font-weight: 500
+		line-height: 1.4
+		font-size: 20px
+		padding-bottom: 21px
+		margin-bottom: 30px
+		text-transform: uppercase
+		&:after
+			backface-visibility: hidden
+			content: ''
+			position: absolute
+			width: 54px
+			height: 2px
+			background-color: $dark-blue
+			bottom: 0
+			left: 0
+
+	&__descr
+		+markpro
+		font-weight: 400
+		font-size: 16px
+		line-height: 1.33
+
+	&__badges
+		margin-left: -10px
+		display: flex
+		flex-wrap: wrap
+
+	&__badge
+

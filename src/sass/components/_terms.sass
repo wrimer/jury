@@ -1,0 +1,33 @@
+.terms
+	padding-top: 25px
+
+	&__container
+
+	&__title
+		color: $gray
+		+financier
+		font-size: 48px
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 7px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin-left: -31px
+		margin-top: 25px
+		margin-bottom: 25px
+		+r(767)
+			margin-left: 0
+
+
+	&__item
+		width: calc(33.33% - 31px)
+		margin-left: 31px
+		margin-top: 31px
+		+r(991)
+			width: calc(50% - 31px)
+		+r(767)
+			width: 100%
+			margin-left: 0
+
