@@ -1,0 +1,25 @@
+<section class="categories">
+  <div class="categories__container container">
+    <div class="categories__row row">
+      <div class="categories__col col-sm-12">
+        <h3 class="categories__title">Category</h3>
+      </div>
+    </div>
+    {% set categories = ['all', 'legal', 'blockchain', 'finance', 'it'] %}
+
+    <div class="categories__row row">
+      <div class="categories__col col-sm-12">
+        <div class="categories__list category">
+          <div class="category__form">
+            {% for item in categories %}
+              <label class="category__label">
+                <input id="{{ item }}" type="checkbox" class="category__checkbox">
+                <span class="category__text">{{ item }}</span>
+              </label>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
