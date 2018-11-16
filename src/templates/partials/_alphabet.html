@@ -1,0 +1,14 @@
+{% set alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",  "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] %}
+<section class="alphabet">
+  <div class="alphabet__container container">
+    <ul class="alphabet__list js-hor-scroll">
+      {% for item in alphabet %}
+        <li class="alphabet__item">
+          <a href="#" class="alphabet__text
+          {% if loop.index % 2 %}alphabet__text_disabled{% endif %}
+          {% if loop.index == 2 %}alphabet__text_active{% endif %}">{{ item }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+.alphabet
+	padding-top: 26px
+	padding-bottom: 19px
+	margin-top: 1px
+	background-color: $white
+	overflow: hidden
+	+r(991)
+		padding-top: 0
+		padding-bottom: 0
+
+	&__list
+		display: flex
+		justify-content: space-between
+		+r(991)
+			flex-wrap: wrap
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				width: 10000%
+				left: -50%
+				height: 1px
+				top: 50%
+				background-color: $light-gray
+		+r(767)
+			overflow-x: auto
+			flex-wrap: nowrap
+			&:after
+				display: none
+
+	&__item
+		+r(991)
+			width: 7.69%
+			padding-top: 26px
+			padding-bottom: 19px
+		+r(767)
+			width: 42px
+			flex-shrink: 0
+
+	&__text
+		position: relative
+		+financier
+		font-weight: 500
+		font-size: 21px
+		color: $gray
+		text-transform: uppercase
+		+hover
+			text-decoration: none
+			color: rgba($gray, .7)
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 100%
+				height: 2px
+				bottom: -2px
+				background-color: $pink
+		&:focus
+			text-decoration: none
+			color: rgba($gray, .7)
+
+
+	&__text_disabled
+		pointer-events: none
+		opacity: .6
+
+
+	&__text_active
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 2px
+			bottom: -2px
+			background-color: $pink
+
+
