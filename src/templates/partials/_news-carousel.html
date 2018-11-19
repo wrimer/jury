@@ -1,0 +1,23 @@
+{% import 'data/news-carousel-data.html' as data %}
+<div id="newsCarousel" class="news-carousel carousel slide" data-ride="carousel">
+
+  <ol class="news-carousel__indicators carousel-indicators">
+    {% for item in data.list %}
+      <li data-target="#newsCarousel" data-slide-to="{{ loop.index0 }}"
+          {% if loop.index0 === 0 %}class="active" {% endif %}></li>
+    {% endfor %}
+  </ol>
+  <div class="news-carousel__inner carousel-inner">
+    {% for item in data.list %}
+      <div class="news-carousel__item item{% if loop.index0 === 0 %} active{% endif %}"
+           style="background: url('./img/{{ item.background }}') no-repeat center; background-size: cover">
+
+        <div class="news-carousel__container container">
+          <h2 class="news-carousel__title">{{ item.title }}</h2>
+          <p class="news-carousel__descr">{{ item.descr }}</p>
+          <p class="news-carousel__date">{{ item.date }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

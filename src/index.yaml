@@ -9,4 +9,6 @@ PageList:
   ready: 80
 - file: wiki.html
   ready: 80
+- file: news.html
+  ready: 80
 

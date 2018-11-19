@@ -1,0 +1,40 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  {# begin header #}
+  {% include "partials/_header.html" %}
+  {# end header #}
+
+  {# begin news #}
+  {% include "partials/_news-carousel.html" %}
+  {# end news #}
+
+  {% import 'data/news-technologies-data.html' as news %}
+  {# begin news #}
+  {% include "partials/_news.html" %}
+  {# end news #}
+
+  {% import 'data/news-technologies-data.html' as news %}
+  {# begin news #}
+  {% include "partials/_news.html" %}
+  {# end news #}
+
+  {% import 'data/news-technologies-data.html' as news %}
+  {# begin news #}
+  {% include "partials/_news.html" %}
+  {# end news #}
+
+  {% import 'data/news-technologies-data.html' as news %}
+  {# begin news #}
+  {% include "partials/_news.html" %}
+  {# end news #}
+
+  {# begin subscribe #}
+  {% include "partials/_footer.html" %}
+  {# end subscribe #}
+
+{% endblock %}

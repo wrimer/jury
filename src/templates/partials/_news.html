@@ -1,4 +1,4 @@
-<section class="news">
+<section class="news {% if news.isSmallPadding %}news_sm{% endif %}">
   <div class="news__container container">
     <div class="news__row row">
       <div class="new__col col-sm-12 xol-xs-12">
@@ -11,7 +11,9 @@
         <div class="{{ item.style }}">
           <div class="news__item news-article">
             <a href="#"><img src="./img/{{ item.image }}" class="news-article__image" alt="News image"></a>
-            <div class="news-article__category">{{ item.category }}</div>
+            {% if item.category %}
+              <div class="news-article__category">{{ item.category }}</div>
+            {% endif %}
             <div class="news-article__item-title"><a href="#">{{ item.title }}</a></div>
             <div class="news-article__descr">{{ item.descr }}</div>
           </div>
@@ -24,6 +26,5 @@
         <a class="news__link button button_decorated button_decorated_sm button_blue" href="#">{{ news.button }}</a>
       </div>
     </div>
-  </div>
   </div>
 </section>
