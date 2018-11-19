@@ -1,0 +1,66 @@
+.client-item
+	+r(767)
+		display: flex
+		flex-direction: column
+
+	&__image-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 262px
+		height: 290px
+		background-color: $dark-blue
+		flex-shrink: 0
+		z-index: 1
+		+r(1199)
+			width: 199px
+			height: 220px
+		+r(767)
+			width: 100%
+			max-height: 135px
+
+	&__image
+		max-width: 85%
+
+	&__about
+		display: flex
+		flex-direction: column
+		min-height: 362px
+		background-color: $white
+		margin-left: -167px
+		padding: 26px 50px 36px 211px
+		+r(1199)
+			padding: 26px 41px 36px 129px
+			margin-left: -104px
+		+r(767)
+			padding: 20px 15px 46px 15px
+			margin-left: 0
+
+
+	&__badges
+		margin-bottom: 22px
+
+	&__badge
+		margin: 0 10px 10px 0
+
+
+	&__descr
+		+markpro
+		font-size: 21px
+		line-height: 1.33
+		margin-right: 100px
+		+r(1199)
+			margin-right: 0
+		+r(991)
+			font-size: 16px
+		+r(767)
+			font-size: 21px
+
+
+	&__button
+		margin-top: auto
+		margin-left: auto
+		+r(767)
+			margin-top: 24px
+			margin-left: 0
+			margin-right: auto

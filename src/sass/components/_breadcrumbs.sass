@@ -1,6 +1,8 @@
 .breadcrumbs
 	padding: 30px 0
 	background-color: $light-gray
+	+r(767)
+		display: none
 
 	&__container
 		display: flex
@@ -15,7 +17,7 @@
 		position: relative
 		+markpro
 		font-size: 12px
-		font-weight: 500
+		font-weight: 600
 		letter-spacing: 1.71px
 		color: $blue
 		display: flex
@@ -24,11 +26,14 @@
 			content: ''
 			position: absolute
 			display: block
-			width: 1px
+			width: 2px
 			height: 2px
 			background-color: $blue
 			right: -14px
-			top: 50%
+			top: calc(50% - 1px)
+		&:hover
+			color: rgba($blue, .85)
+
 
 	&__link_current
 		pointer-events: none

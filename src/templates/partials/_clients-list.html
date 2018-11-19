@@ -1,0 +1,33 @@
+{% import 'data/clients-data.html' as data %}
+<section class="client-list">
+  <div class="client-list__container container">
+    <ul class="client-list__clients">
+      {% for item in data.list %}
+        <li class="client-list__wrapper">
+          <h2 class="client-list__title title">{{ item.title }}</h2>
+          <ul class="client-list__list">
+            {% for client in item.clients %}
+              <li class="client-list__item client-item">
+                <div class="client-item__image-wrapper">
+                  <img src="./img/{{ client.logo }}" alt="Client image" class="client-item__image">
+                </div>
+                <div class="client-item__about">
+                  <div class="client-item__badges">
+                    {% for badge in client.badges %}
+                      <div class="client-item__badge badge">{{ badge }}</div>
+                    {% endfor %}
+                  </div>
+                  <p class="client-item__descr">{{ client.descr }}</p>
+                  <a href="#" class="client-item__button button button_blue button_decorated">discover client</a>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+          <div class="client-list__button-wrapper">
+            <button type="button" class="client-list__button button button_blue button_decorated">load 3 more</button>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
