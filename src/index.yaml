@@ -13,4 +13,6 @@ PageList:
   ready: 80
 - file: clients.html
   ready: 80
+- file: support.html
+  ready: 80
 
