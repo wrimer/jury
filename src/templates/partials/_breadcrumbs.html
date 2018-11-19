@@ -1,0 +1,13 @@
+<section class="breadcrumbs">
+  <div class="breadcrumbs__container container">
+    <ul class="breadcrumbs__list">
+      {% for item in breadcrumbs.list %}
+        <li class="breadcrumbs__item">
+          <a href="#"
+             class="breadcrumbs__link{% if loop.index === loop.length %} breadcrumbs__link_current{% endif %}">{{ item }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  {# begin header #}
+  {% include "partials/_header.html" %}
+  {# end header #}
+
+  {% import 'data/about-clients-data.html' as data %}
+  {# begin about-info #}
+  {% include "partials/_about.html" %}
+  {# end about-info #}
+
+  {% import 'data/breadcrumbs-clients.html' as breadcrumbs %}
+  {# begin breadcrumbs #}
+  {% include "partials/_breadcrumbs.html" %}
+  {# end breadcrumbs #}
+
+
+  {# begin subscribe #}
+  {% include "partials/_footer.html" %}
+  {# end subscribe #}
+
+{% endblock %}
+
+
+

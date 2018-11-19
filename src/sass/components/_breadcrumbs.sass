@@ -1,0 +1,38 @@
+.breadcrumbs
+	padding: 30px 0
+	background-color: $light-gray
+
+	&__container
+		display: flex
+		justify-content: flex-end
+
+	&__list
+		display: flex
+
+	&__item
+
+	&__link
+		position: relative
+		+markpro
+		font-size: 12px
+		font-weight: 500
+		letter-spacing: 1.71px
+		color: $blue
+		display: flex
+		margin-right: 24px
+		&:after
+			content: ''
+			position: absolute
+			display: block
+			width: 1px
+			height: 2px
+			background-color: $blue
+			right: -14px
+			top: 50%
+
+	&__link_current
+		pointer-events: none
+		opacity: .2
+		margin-right: 0
+		&:after
+			display: none
