@@ -1,0 +1,34 @@
+<section class="support-info">
+  <div class="support-info__wrapper wrapper">
+    <div class="support-info__container container">
+      {% import 'data/breadcrumbs-support.html' as breadcrumbs %}
+      <section class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            {% for item in breadcrumbs.list %}
+              <li class="breadcrumbs__item">
+                <a href="#"
+                   class="breadcrumbs__link{% if loop.index === loop.length %} breadcrumbs__link_current{% endif %}">{{ item }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+      </section>
+
+      <div class="support-info__inner">
+        <p class="support-info__text">
+          Each project coming to Jury.Online has a roadmap with clear transitional stages. All stages are being kept on
+          an
+          invulnerable smart contract, which is created when investing. When a project completes a milestone - only then
+          it
+          receives the next part of invested funds for its further development.
+        </p>
+        <div class="support-info__credentials">
+          <p class="support-info__credentials-descr">Head office phone</p>
+          <a class="support-info__credentials-value" href="tel:+1 814-388-9337">+1 814-388-9337</a>
+          <p class="support-info__credentials-descr">General Inquiries</p>
+          <a class="support-info__credentials-value" href="mailto:eladio_huels@gmail.com">eladio_huels@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
