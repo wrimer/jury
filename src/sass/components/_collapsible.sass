@@ -1,0 +1,66 @@
+.collapsible
+	padding-top: 70px
+	padding-bottom: 60px
+
+	&__container
+
+	&__title
+		position: relative
+		margin-bottom: 45px
+		&:after
+			position: absolute
+			content: ''
+			left: 0
+			right: 0
+			bottom: -28px
+			height: 1px
+			background-color: rgba($dark-blue, .1)
+
+	&__inner
+		position: relative
+		border-bottom: 1px solid rgba($dark-blue, .1)
+		&:before, &:after
+			transition: 600ms
+			content: ''
+			position: absolute
+			width: 13px
+			height: 1px
+			background-color: $dark-blue
+			right: 0
+			top: 16px
+		&:after
+			transform: rotate(90deg)
+		+r(767)
+			&:before, &:after
+				top: 12px
+
+	&__question
+		+markpro
+		font-weight: 700
+		font-size: 24px
+		color: $dark-blue
+		margin-bottom: 9px
+		margin-top: 16px
+		+r(767)
+			font-size: 18px
+			padding-right: 20px
+
+
+	&__answer
+		color: $gray
+		+markpro
+		font-size: 21px
+		line-height: 1.53
+		overflow: hidden
+		height: 0
+		+r(767)
+			font-size: 16px
+
+	//opened
+
+	&__inner_opened
+		&:after
+			transform: rotate(0deg)
+		.collapsible__answer
+			height: auto
+			margin-bottom: 27px
