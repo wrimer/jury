@@ -2,10 +2,13 @@
 	width: 33%
 
 	&__body
+		transition: 400ms
 		width: 100%
 		height: 100%
 		padding: 20px 18px
 		background-color: $white
+		&:hover
+			background-color: $blue
 
 	&__title
 		position: relative
@@ -29,7 +32,8 @@
 	&__link
 		color: $gray
 		&:hover
-			color: rgba($gray, .7)
+			text-decoration: none
+			color: $white
 
 
 	&__descr
