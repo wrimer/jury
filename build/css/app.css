@@ -8104,6 +8104,14 @@ body {
   text-transform: uppercase;
 }
 
+.term__link {
+  color: #313336;
+}
+
+.term__link:hover {
+  color: rgba(49, 51, 54, 0.7);
+}
+
 .term__descr {
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-weight: 400;
@@ -8242,6 +8250,11 @@ body {
 
 .header_scrolled {
   background-color: #2a2f54;
+}
+
+.header__logo {
+  position: relative;
+  top: 6px;
 }
 
 .header__logo .icon {
@@ -9409,6 +9422,11 @@ body {
   height: 100%;
 }
 
+.internal-wiki__title-inner {
+  padding: 20px;
+  background-color: #03357B;
+}
+
 .internal-wiki__inner {
   display: -ms-flexbox;
   display: flex;
@@ -9433,8 +9451,37 @@ body {
 
 .internal-wiki__image {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
+}
+
+.internal-wiki__badges {
+  margin-top: 20px;
+}
+
+.internal-wiki__badge {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.internal-wiki__projects {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.internal-wiki__project-title {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-size: 21px;
+  color: #484848;
+  text-transform: uppercase;
+}
+
+.internal-wiki__link {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-size: 21px;
+  line-height: 1.53;
+  color: #03357B;
 }
 
 @media screen and (min-width: 768px){
