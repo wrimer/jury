@@ -8091,7 +8091,7 @@ body {
 .term__body {
   width: 100%;
   height: 100%;
-  padding: 40px 18px;
+  padding: 20px 18px;
   background-color: #fff;
 }
 
@@ -8101,21 +8101,7 @@ body {
   font-weight: 500;
   line-height: 1.4;
   font-size: 20px;
-  padding-bottom: 21px;
-  margin-bottom: 30px;
   text-transform: uppercase;
-}
-
-.term__title:after {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  content: '';
-  position: absolute;
-  width: 54px;
-  height: 2px;
-  background-color: #002A66;
-  bottom: 0;
-  left: 0;
 }
 
 .term__descr {
@@ -8785,6 +8771,12 @@ body {
   color: #fff;
   min-width: 320px;
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+}
+
+.hero-block_small {
+  padding-top: 130px;
+  padding-bottom: 10px;
+  height: 330px;
 }
 
 .hero-block__title {
@@ -10928,6 +10920,9 @@ body {
     height: 568px;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .hero-block_small{
+    height: 330px;
   }
   .hero-block__descr{
     font-size: 16px;
