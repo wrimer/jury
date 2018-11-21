@@ -6970,10 +6970,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 }
 
 .noUi-horizontal .noUi-handle {
-  width: 34px;
-  height: 28px;
-  left: -17px;
-  top: -6px;
+  width: 14px;
+  height: 14px;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .noUi-vertical {
@@ -6988,7 +6988,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 }
 
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
-  right: -17px;
+  right: -7px;
+  top: -7px;
   left: auto;
 }
 
@@ -7018,45 +7019,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .noUi-handle {
-  border: 1px solid #D9D9D9;
-  border-radius: 3px;
-  background: #FFF;
-  cursor: default;
-  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
-}
-
-.noUi-active {
-  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
-}
-
-/* Handle stripes;
- */
-.noUi-handle:before,
-.noUi-handle:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 14px;
-  width: 1px;
-  background: #E8E7E6;
-  left: 14px;
-  top: 6px;
-}
-
-.noUi-handle:after {
-  left: 17px;
-}
-
-.noUi-vertical .noUi-handle:before,
-.noUi-vertical .noUi-handle:after {
-  width: 14px;
-  height: 1px;
-  left: 6px;
-  top: 14px;
-}
-
-.noUi-vertical .noUi-handle:after {
-  top: 17px;
+  background: #D92559;
+  cursor: pointer;
 }
 
 /* Disabled state;
@@ -7388,7 +7352,7 @@ body {
 
 .advantage__image {
   width: calc(100% - 1px);
-  height: 380px;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -7431,7 +7395,7 @@ body {
 }
 
 .feedback {
-  height: 418px;
+  height: 360px;
   display: -ms-flexbox;
   display: flex;
   padding-right: 14px;
@@ -7450,8 +7414,8 @@ body {
 .feedback__image {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 327px;
-  height: 373px;
+  width: 256px;
+  height: 300px;
   z-index: 1;
 }
 
@@ -7471,18 +7435,18 @@ body {
 .feedback__blue {
   position: absolute;
   background-color: #002A66;
-  height: 274px;
+  height: 200px;
 }
 
 .feedback__blue_left {
-  top: 31px;
+  top: 5px;
   left: 0;
   right: 38px;
-  padding: 27px 0 150px 106px;
+  padding: 27px 0 75px 106px;
 }
 
 .feedback__blue_right {
-  top: 30px;
+  top: 5px;
   left: 0;
   right: 0;
   padding: 26px 0 128px 156px;
@@ -7534,7 +7498,7 @@ body {
 .feedback__white {
   background-color: #fff;
   position: absolute;
-  height: 264px;
+  height: 240px;
 }
 
 .feedback__white_left {
@@ -8535,7 +8499,7 @@ body {
 }
 
 .advantages__link {
-  margin-top: 68px;
+  margin-top: 38px;
 }
 
 .clients {
@@ -8555,7 +8519,7 @@ body {
 .clients__wrapper {
   width: 100%;
   max-width: 1322px;
-  margin: 289px auto 0;
+  margin: 75px auto 0;
   background-color: #fff;
 }
 
@@ -8578,7 +8542,7 @@ body {
   background-color: #f1f1f1;
   padding-top: 50px;
   padding-bottom: 60px;
-  margin-bottom: 75px;
+  margin-bottom: 35px;
   min-width: 320px;
 }
 
@@ -8587,7 +8551,7 @@ body {
 }
 
 .mediators__item {
-  margin-top: 83px;
+  margin-top: 43px;
 }
 
 .mediators__col-link {
@@ -8602,11 +8566,11 @@ body {
 }
 
 .mission {
-  height: 768px;
+  height: 630px;
   background: #002A66 url("../img/mission-background.png") no-repeat center;
   background-size: cover;
-  padding-top: 126px;
-  padding-bottom: 76px;
+  padding-top: 48px;
+  padding-bottom: 50px;
   min-width: 320px;
 }
 
@@ -8661,7 +8625,7 @@ body {
 }
 
 .mission__button-row {
-  margin-top: 79px;
+  margin-top: 50px;
 }
 
 .subscribe {
@@ -10331,7 +10295,7 @@ body {
     height: 162px;
   }
   .advantage__image{
-    height: 380px;
+    height: 350px;
   }
   .feedback{
     height: 351px;
@@ -10341,11 +10305,11 @@ body {
     height: 311px;
   }
   .feedback__blue{
-    height: 226px;
+    height: 200px;
   }
   .feedback__blue_left{
     right: 20px;
-    padding: 14px 0 150px 59px;
+    padding: 14px 0 75px 59px;
   }
   .feedback__blue_right{
     padding: 18px 0 128px 103px;
@@ -10405,13 +10369,8 @@ body {
     height: 752px;
   }
   .clients__wrapper{
-    margin-top: 215px;
+    margin-top: 120px;
     max-width: 1100px;
-  }
-  .mission{
-    height: 753px;
-    padding-top: 101px;
-    padding-bottom: 115px;
   }
   .mission__text-wrapper{
     width: 599px;
@@ -10478,7 +10437,7 @@ body {
     margin-top: 10px;
   }
   .advantage__image{
-    height: 380px;
+    height: 350px;
   }
   .advantage__text{
     font-size: 20px;
@@ -10590,7 +10549,7 @@ body {
     height: 600px;
   }
   .clients__wrapper{
-    margin-top: 139px;
+    margin-top: 120px;
     max-width: 860px;
   }
   .mediators__title{
