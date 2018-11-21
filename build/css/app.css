@@ -8248,6 +8248,11 @@ body {
   padding-bottom: 20px;
 }
 
+.header_static {
+  position: static;
+  background-color: #2a2f54;
+}
+
 .header_scrolled {
   background-color: #2a2f54;
 }
@@ -9423,7 +9428,7 @@ body {
 }
 
 .internal-wiki__title-inner {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #03357B;
 }
 
@@ -9432,6 +9437,7 @@ body {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: 0 0 40px;
 }
 
 .internal-wiki__text {
@@ -9475,6 +9481,7 @@ body {
   font-size: 21px;
   color: #484848;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .internal-wiki__link {
@@ -9482,6 +9489,10 @@ body {
   font-size: 21px;
   line-height: 1.53;
   color: #03357B;
+}
+
+.internal-wiki__link:hover {
+  color: rgba(3, 53, 123, 0.7);
 }
 
 @media screen and (min-width: 768px){
@@ -11129,6 +11140,29 @@ body {
   }
   .ask-us__subtitle{
     font-size: 16px;
+  }
+  .internal-wiki{
+    background-color: #fff;
+  }
+  .internal-wiki__inner{
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+  }
+  .internal-wiki__text{
+    width: 100%;
+  }
+  .internal-wiki__text p{
+    font-size: 16px;
+  }
+  .internal-wiki__sidebar{
+    width: 100%;
+  }
+  .internal-wiki__image{
+    max-height: 360px;
+  }
+  .internal-wiki__projects{
+    padding: 20px 0;
   }
 }
 
