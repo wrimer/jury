@@ -15,4 +15,6 @@ PageList:
   ready: 80
 - file: support.html
   ready: 80
+- file: arbiters.html
+  ready: 80
 

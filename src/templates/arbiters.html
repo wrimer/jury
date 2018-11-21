@@ -1,0 +1,28 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  {# begin header #}
+  {% include "partials/_header.html" %}
+  {# end header #}
+
+  {% import 'data/about-clients-data.html' as data %}
+  {# begin about-info #}
+  {% include "partials/_about.html" %}
+  {# end about-info #}
+
+  {# begin filter #}
+  {% include "partials/_filter.html" %}
+  {# end filter #}
+
+  {# begin subscribe #}
+  {% include "partials/_footer.html" %}
+  {# end subscribe #}
+
+{% endblock %}
+
+
+
