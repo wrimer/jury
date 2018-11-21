@@ -8089,10 +8089,15 @@ body {
 }
 
 .term__body {
+  transition: 400ms;
   width: 100%;
   height: 100%;
   padding: 20px 18px;
   background-color: #fff;
+}
+
+.term__body:hover {
+  background-color: #03357B;
 }
 
 .term__title {
@@ -8109,7 +8114,8 @@ body {
 }
 
 .term__link:hover {
-  color: rgba(49, 51, 54, 0.7);
+  text-decoration: none;
+  color: #fff;
 }
 
 .term__descr {
