@@ -1,5 +1,32 @@
 <section class="filter">
+  <div class="filter__container container">
+    <div class="filter__row row">
+      <div class="filter__col col-sm-8">
+        <h3 class="filter__title">Category</h3>
+      </div>
+      <div class="filter__col col-sm-4">
+        <h3 class="filter__title">Rating</h3>
+      </div>
+    </div>
+    {% set filter = ['all', 'legal', 'blockchain', 'finance', 'it'] %}
 
-  <div id="js-range" class="js-range" style="margin: 50px 50px;"></div>
+    <div class="filter__row row">
+      <div class="filter__col col-sm-8">
+        <div class="filter__list category">
+          <div class="category__form">
+            {% for item in filter %}
+              <label class="category__label">
+                <input id="{{ item }}" type="checkbox" class="category__checkbox">
+                <span class="category__text">{{ item }}</span>
+              </label>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="filter__col col-sm-4">
+        <div id="js-range" class="js-range"></div>
+      </div>
+    </div>
+  </div>
 
 </section>

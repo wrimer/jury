@@ -3,8 +3,8 @@
   <div class="hero-block__container container ">
     <div class="hero-block__row row">
       <div class="hero-block__col col-sm-12 col-xs-12 full-height-child">
-        <div class="hero-block__title title title_white title_lg">{{ about.item.title }}</div>
-        <p class="hero-block__descr"> {{ about.item.text | safe }}</p>
+        <h1 class="hero-block__title title title_white title_lg {% if about.item.center %} hero-block_center {% endif %}">{{ about.item.title }}</h1>
+        <p class="hero-block__descr {% if about.item.center %} hero-block_center {% endif %}"> {{ about.item.text | safe }}</p>
       </div>
     </div>
   </div>

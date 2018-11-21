@@ -2,15 +2,13 @@
 <section class="terms">
   <div class="terms__container container">
 
-    {% for literal in data.list %}
-      <div class="terms__title">{{ literal.literal }}</div>
-
-      <ul class="terms__list">
+    <ul class="terms__list">
+      {% for literal in data.list %}
         {% for item in literal.terms %}
           <li class="terms__item term">
             <div class="term__body">
-              <div class="term__title">{{ item.title }}</div>
-              <div class="term__descr">{{ item.descr }}</div>
+              <h2 class="term__title">{{ item.title }}</h2>
+              <p class="term__descr">{{ item.descr }}</p>
               <div class="term__badges">
                 {% for badge in item.badges %}
                   <div class="term__badge badge">{{ badge }}</div>
@@ -19,10 +17,31 @@
             </div>
           </li>
         {% endfor %}
-
-      </ul>
-    {% endfor %}
+      {% endfor %}
+    </ul>
 
 
   </div>
 </section>
+
+{#extended version#}
+{#{% for literal in data.list %}#}
+  {#<div class="terms__title">{{ literal.literal }}</div>#}
+
+  {#<ul class="terms__list">#}
+    {#{% for item in literal.terms %}#}
+      {#<li class="terms__item term">#}
+        {#<div class="term__body">#}
+          {#<h2 class="term__title">{{ item.title }}</h2>#}
+          {#<p class="term__descr">{{ item.descr }}</p>#}
+          {#<div class="term__badges">#}
+            {#{% for badge in item.badges %}#}
+              {#<div class="term__badge badge">{{ badge }}</div>#}
+            {#{% endfor %}#}
+          {#</div>#}
+        {#</div>#}
+      {#</li>#}
+    {#{% endfor %}#}
+  {#</ul>#}
+{#{% endfor %}#}
+

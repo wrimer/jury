@@ -9,16 +9,26 @@ title: Index page
   {% include "partials/_header.html" %}
   {# end header #}
 
+  {% import 'data/hero-wiki-data.html' as about %}
+  {# begin hero #}
+  {% include "partials/_hero-block.html" %}
+  {# end hero #}
+
+  {% import 'data/breadcrumbs-wiki-data.html' as breadcrumbs %}
+  {# begin breadcrumbs #}
+  {% include "partials/_breadcrumbs.html" %}
+  {# end breadcrumbs #}
+
   {# begin search #}
-  {% include "partials/_search.html" %}
+  {#{% include "partials/_search.html" %}#}
   {# end search #}
 
   {# begin categories #}
-  {% include "partials/_categories.html" %}
+  {#{% include "partials/_categories.html" %}#}
   {# end categories #}
 
   {# begin alphabet #}
-  {% include "partials/_alphabet.html" %}
+  {#{% include "partials/_alphabet.html" %}#}
   {# end alphabet #}
 
 

@@ -95,7 +95,47 @@
         </div>
       </section>
       <section class="filter">
-        <div id="js-range" class="js-range" style="margin: 50px 50px;"></div>
+        <div class="filter__container container">
+          <div class="filter__row row">
+            <div class="filter__col col-sm-8">
+              <h3 class="filter__title">Category</h3>
+            </div>
+            <div class="filter__col col-sm-4">
+              <h3 class="filter__title">Rating</h3>
+            </div>
+          </div>
+          <div class="filter__row row">
+            <div class="filter__col col-sm-8">
+              <div class="filter__list category">
+                <div class="category__form">
+                  <label class="category__label">
+                    <input id="all" type="checkbox" class="category__checkbox">
+                    <span class="category__text">all</span>
+                  </label>
+                  <label class="category__label">
+                    <input id="legal" type="checkbox" class="category__checkbox">
+                    <span class="category__text">legal</span>
+                  </label>
+                  <label class="category__label">
+                    <input id="blockchain" type="checkbox" class="category__checkbox">
+                    <span class="category__text">blockchain</span>
+                  </label>
+                  <label class="category__label">
+                    <input id="finance" type="checkbox" class="category__checkbox">
+                    <span class="category__text">finance</span>
+                  </label>
+                  <label class="category__label">
+                    <input id="it" type="checkbox" class="category__checkbox">
+                    <span class="category__text">it</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter__col col-sm-4">
+              <div id="js-range" class="js-range"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <footer class="footer">
         <div class="footer__container container">
