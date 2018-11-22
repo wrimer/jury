@@ -6592,14 +6592,8 @@ html {
   src: local("FinancierDisplay Semibold"), local("FinancierDisplay-Semibold"), url("../fonts/FinancierDisplay-Semibold.woff2") format("woff2"), url("../fonts/FinancierDisplay-Semibold.woff") format("woff");
 }
 
-.icon-logo {
-  width: 6.13em;
-  height: 1em;
-  fill: currentColor;
-}
-
-.icon-toggle-open {
-  width: 1.38em;
+.icon-star {
+  width: 0.94em;
   height: 1em;
   fill: currentColor;
 }
@@ -9499,6 +9493,44 @@ body {
 
 .internal-wiki__link:hover {
   color: rgba(3, 53, 123, 0.7);
+}
+
+.filter {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.filter__col-rating {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.filter__title {
+  margin-bottom: 18px;
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #313336;
+  letter-spacing: 1.67px;
+  font-weight: 600;
+}
+
+.filter__star {
+  margin-left: 10px;
+}
+
+.filter__star .icon {
+  font-size: 15px;
+  fill: #D92559;
+}
+
+.filter__range {
+  width: 100%;
+  margin-top: 4px;
 }
 
 @media screen and (min-width: 768px){

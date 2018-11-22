@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+        <path id="a" d="M1028.5 940l-1.77 5.73H1021l4.634 3.54-1.77 5.73 4.636-3.54 4.636 3.54-1.77-5.73 4.634-3.54h-5.73z"/>
+    </defs><symbol id="icon-star" viewBox="0 0 15 16">
+    
+    <g transform="translate(-1021 -940)">
+        <use xlink:href="#a"/>
+        <use fill-opacity="0" stroke-miterlimit="50" stroke-width=".75" xlink:href="#a"/>
+    </g>
+</symbol></svg>
