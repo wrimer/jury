@@ -7215,6 +7215,7 @@ body {
 }
 
 .button_pink {
+  box-sizing: border-box;
   display: inline-block;
   background-color: #D92559;
   padding: 10px 30px;
@@ -7224,12 +7225,25 @@ body {
   background: url("../img/arrow-white.svg") no-repeat;
 }
 
+.button_pink:hover {
+  text-decoration: none;
+  color: #D92559;
+  background-color: #fff;
+  border: 1px #D92559 solid;
+  padding: 9px 29px;
+}
+
 .button_pink:hover:after {
   opacity: .5;
+  background: url("../img/arrow-pink.svg") no-repeat;
 }
 
 .button_pink_lg {
   padding: 20px 23px;
+}
+
+.button_pink_lg:hover {
+  padding: 19px 22px;
 }
 
 .button_blue {
@@ -7241,6 +7255,7 @@ body {
 }
 
 .button_blue:hover {
+  text-decoration: none;
   color: rgba(3, 53, 123, 0.7);
 }
 
@@ -7699,6 +7714,12 @@ body {
   color: #fff;
 }
 
+.nav__sublist-link:hover {
+  background-color: #fff;
+  color: #3f4465;
+  text-decoration: none;
+}
+
 .nav__login {
   margin-left: auto;
 }
@@ -7712,7 +7733,7 @@ body {
 
 .no-touch .nav__link:hover {
   color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav__button {
@@ -8028,9 +8049,9 @@ body {
 .about {
   display: -ms-flexbox;
   display: flex;
-  min-height: 630px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  min-height: 360px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   min-width: 320px;
 }
 
