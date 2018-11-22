@@ -18,6 +18,7 @@ $(window).ready(function() {
   $(window).click(function(event) {
     if (event.target === modal.get(0)) {
       modal.css('display', 'none');
+      video.attr('src', video.attr('src'));
     }
   });
 });

@@ -1,12 +1,12 @@
 .mission
-	height: 630px
+	min-height: 630px
 	background: $dark-blue url("../img/mission-background.png") no-repeat center
 	background-size: cover
 	padding-top: 48px
 	padding-bottom: 50px
 	min-width: 320px
 	+r(767)
-		height: 251px
+		min-height: 251px
 		position: relative
 		z-index: 1
 		padding-top: 24px
@@ -27,14 +27,14 @@
 	&__text-wrapper
 		position: relative
 		width: 652px
-		height: 281px
+		min-height: 281px
 		border: 1px $white solid
 		margin-top: 64px
 		margin-left: -16px
 		display: flex
 		justify-content: center
 		align-items: center
-		padding: 0 50px
+		padding: 8px 50px 26px
 		&:after
 			content: ''
 			position: absolute
@@ -45,15 +45,16 @@
 			right: -18px
 		+r(1199)
 			width: 599px
-			height: 258px
+			min-height: 258px
 			margin-top: 75px
 			margin-left: -20px
-			padding: 0 25px
+			padding: 8px 25px 28px
 		+r(767)
 			width: 100%
 			border: none
 			margin-left: 0
-			margin-top: -50px
+			margin-top: 0
+			margin-bottom: 8px
 			padding: 0 6px
 			&:after
 				display: none
@@ -65,17 +66,17 @@
 		line-height: 1.43
 		color: $white
 		text-align: center
-		margin-top: -28px
 		+r(767)
 			font-size: 16px
 
 	&__button-row
 		margin-top: 50px
 		+r(767)
-			margin-top: -54px
+			margin-top: 0
 
 	&__button
 		+r(767)
+			margin-bottom: -28px
 			display: flex
 			justify-content: center
 
