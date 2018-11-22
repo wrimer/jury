@@ -7533,6 +7533,12 @@ body {
   width: 49.8%;
 }
 
+.feedback-card__card-item_sm {
+  width: calc(33.33% - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .feedback-card__card-avatar {
   width: 100%;
   height: 373px;
@@ -7566,7 +7572,28 @@ body {
   font-size: 16px;
   color: #313336;
   line-height: 1.5;
-  padding: 20px 24px 40px;
+  padding: 20px 24px 10px;
+}
+
+.feedback-card__card-rating {
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 24px 20px;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedback-card__card-rating .icon {
+  margin-right: 10px;
+  fill: #D92559;
+  font-size: 18px;
+}
+
+.feedback-card__card-rating-text {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #D92559;
+  font-weight: 700;
 }
 
 .feedback-card__card-links {
@@ -9532,6 +9559,18 @@ body {
   margin-top: 4px;
 }
 
+.mediator-list__title {
+  margin-bottom: 20px;
+}
+
+.mediator-list__card-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
 @media screen and (min-width: 768px){
   .jumbotron{
     padding-top: 48px;
@@ -10560,6 +10599,9 @@ body {
     font-size: 20px;
     padding: 0 12px;
   }
+  .feedback-card__card-item_sm{
+    width: calc(50% - 30px);
+  }
   .nav{
     display: none;
   }
@@ -10975,6 +11017,10 @@ body {
     width: 100%;
     margin-top: 4px;
   }
+  .feedback-card__card-item_sm{
+    width: 100%;
+    margin-left: 0;
+  }
   .feedback-card__card-avatar{
     height: 302px;
   }
@@ -11361,6 +11407,9 @@ body {
   }
   .internal-wiki__projects{
     padding: 20px 0;
+  }
+  .mediator-list__card-list{
+    margin-left: 0;
   }
 }
 
