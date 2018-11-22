@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"
+     viewBox="0 0 15 16">
+  <defs>
+    <path id="xbsya"
+          d="M1028.5 940l-1.77 5.73H1021l4.634 3.54-1.77 5.73 4.636-3.54 4.636 3.54-1.77-5.73 4.634-3.54h-5.73z"/>
+  </defs>
+  <g>
+    <g transform="translate(-1021 -940)">
+      <use fill="#d92559" xlink:href="#xbsya"/>
+      <use fill="#fff" fill-opacity="0" stroke="#d92559" stroke-miterlimit="50" stroke-width=".75" xlink:href="#xbsya"/>
+    </g>
+  </g>
+</svg>

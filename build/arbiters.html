@@ -97,17 +97,10 @@
       <section class="filter">
         <div class="filter__container container">
           <div class="filter__row row">
-            <div class="filter__col col-sm-8">
-              <h3 class="filter__title">Category</h3>
-            </div>
-            <div class="filter__col col-sm-4">
-              <h3 class="filter__title">Rating</h3>
-            </div>
-          </div>
-          <div class="filter__row row">
-            <div class="filter__col col-sm-8">
-              <div class="filter__list category">
-                <div class="category__form">
+            <form class="category__form">
+              <div class="filter__col col-sm-8">
+                <h3 class="filter__title">Category</h3>
+                <div class="filter__list category">
                   <label class="category__label">
                     <input id="all" type="checkbox" class="category__checkbox">
                     <span class="category__text">all</span>
@@ -130,10 +123,16 @@
                   </label>
                 </div>
               </div>
-            </div>
-            <div class="filter__col col-sm-4">
-              <div id="js-range" class="js-range"></div>
-            </div>
+              <div class="filter__col filter__col-rating col-sm-4">
+                <h3 class="filter__title">Rating</h3>
+                <div class="filter__star">
+                  <svg class="icon icon-star">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+                <div id="js-range" class="filter__range js-range"></div>
+              </div>
+            </form>
           </div>
         </div>
       </section>

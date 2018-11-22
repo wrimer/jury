@@ -1,6 +1,8 @@
 <section class="collapsible">
   <div class="collapsible__container container">
     <h2 class="collapsible__title title"> {{ collapse.item.title }}</h2>
+  </div>
+  <div class="collapsible__container container">
     {% for item in collapse.item.items %}
       <div class="collapsible__inner js-collapsible">
         <p class="collapsible__question">{{ item.question }}</p>
