@@ -8259,7 +8259,7 @@ body {
 
 .header__logo {
   position: relative;
-  top: 6px;
+  top: 8px;
 }
 
 .header__logo .icon {
@@ -8570,7 +8570,7 @@ body {
 }
 
 .mission {
-  height: 630px;
+  min-height: 630px;
   background: #002A66 url("../img/mission-background.png") no-repeat center;
   background-size: cover;
   padding-top: 48px;
@@ -8595,7 +8595,7 @@ body {
 .mission__text-wrapper {
   position: relative;
   width: 652px;
-  height: 281px;
+  min-height: 281px;
   border: 1px #fff solid;
   margin-top: 64px;
   margin-left: -16px;
@@ -8605,7 +8605,7 @@ body {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 50px;
+  padding: 8px 50px 26px;
 }
 
 .mission__text-wrapper:after {
@@ -8625,7 +8625,6 @@ body {
   line-height: 1.43;
   color: #fff;
   text-align: center;
-  margin-top: -28px;
 }
 
 .mission__button-row {
@@ -10495,10 +10494,10 @@ body {
   }
   .mission__text-wrapper{
     width: 599px;
-    height: 258px;
+    min-height: 258px;
     margin-top: 75px;
     margin-left: -20px;
-    padding: 0 25px;
+    padding: 8px 25px 28px;
   }
   .subscribe{
     padding-top: 120px;
@@ -10926,6 +10925,7 @@ body {
     margin-top: 49px;
   }
   .hero__text{
+    min-height: auto;
     height: 210px;
     width: 100%;
     margin-left: 0;
@@ -10940,6 +10940,9 @@ body {
   }
   .hero__text-link{
     margin-top: 56px;
+  }
+  .hero__scroll{
+    margin-top: 52px;
   }
   .hero__scroll-text{
     margin-top: 14px;
@@ -10992,7 +10995,7 @@ body {
     margin-bottom: 14px;
   }
   .mission{
-    height: 251px;
+    min-height: 251px;
     position: relative;
     z-index: 1;
     padding-top: 24px;
@@ -11006,7 +11009,8 @@ body {
     width: 100%;
     border: none;
     margin-left: 0;
-    margin-top: -50px;
+    margin-top: 0;
+    margin-bottom: 8px;
     padding: 0 6px;
   }
   .mission__text-wrapper:after{
@@ -11016,9 +11020,10 @@ body {
     font-size: 16px;
   }
   .mission__button-row{
-    margin-top: -54px;
+    margin-top: 0;
   }
   .mission__button{
+    margin-bottom: -28px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
