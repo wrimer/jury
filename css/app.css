@@ -7728,7 +7728,7 @@ body {
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   color: #fff;
   line-height: 1.25;
-  padding: 0 20px;
+  padding: 0 12px;
 }
 
 .no-touch .nav__link:hover {
@@ -10516,7 +10516,7 @@ body {
     margin-left: 16px;
   }
   .nav__link{
-    padding: 0 15.5px;
+    padding: 0 6px;
   }
   .wrapper{
     max-width: 1100px;
