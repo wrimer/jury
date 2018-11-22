@@ -8833,9 +8833,9 @@ body {
 }
 
 .hero-block {
-  padding-top: 180px;
-  padding-bottom: 10px;
-  height: 630px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  min-height: 330px;
   color: #fff;
   min-width: 320px;
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
@@ -8873,7 +8873,7 @@ body {
 .how-it-works__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-top: -63px;
+  margin-top: -30px;
   margin-bottom: -35px;
 }
 
@@ -11279,7 +11279,7 @@ body {
     font-size: 16px;
   }
   .how-it-works__wrapper{
-    margin-top: -75px;
+    margin-top: -30px;
     padding-top: 60px;
     padding-bottom: 70px;
     margin-bottom: -16px;
