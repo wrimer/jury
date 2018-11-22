@@ -8289,6 +8289,48 @@ body {
   margin-left: auto;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+}
+
+.modal-close:before, .modal-close:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.modal-close:before {
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-close:after {
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover {
+  opacity: .7;
+}
+
 .header {
   transition: 600ms;
   position: fixed;
@@ -9307,7 +9349,7 @@ body {
 }
 
 .support-info__wrapper {
-  margin-top: -163px;
+  margin-top: -50px;
 }
 
 .support-info__inner {
@@ -9590,6 +9632,49 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -30px;
+}
+
+.support-modal__content {
+  position: relative;
+  width: 593px;
+  height: 282px;
+  margin: 20% auto;
+  background-color: #fff;
+  padding: 35px 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.support-modal__close {
+  right: -50px;
+  top: 0;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.support-modal__title {
+  text-align: center;
+  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #313336;
+}
+
+.support-modal__descr {
+  text-align: center;
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #313336;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.support-modal__button {
+  width: 100%;
+  margin-top: auto;
 }
 
 @media screen and (min-width: 768px){
@@ -11135,6 +11220,9 @@ body {
     margin-left: 0;
     margin-right: auto;
   }
+  .modal-close:before, .modal-close:after{
+    background-color: #000;
+  }
   .header{
     padding-top: 24px;
     padding-bottom: 24px;
@@ -11364,7 +11452,7 @@ body {
   }
   .support-info__wrapper{
     width: calc(100% - 20px);
-    margin-top: -75px;
+    margin-top: -50px;
   }
   .support-info__container{
     padding: 0;
@@ -11431,6 +11519,20 @@ body {
   }
   .mediator-list__card-list{
     margin-left: 0;
+  }
+  .support-modal__content{
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .support-modal__close{
+    right: 12px;
+    top: 12px;
+  }
+  .support-modal__button{
+    margin-top: 24px;
   }
 }
 
