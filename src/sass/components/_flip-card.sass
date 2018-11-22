@@ -1,5 +1,5 @@
 .flip-card
-	height: 533px
+	min-height: 360px
 
 	&_flipped
 		.flip-card__inner
@@ -24,7 +24,7 @@
 		height: 100%
 		backface-visibility: hidden
 		border: 5px $light-blue solid
-		padding: 40px 18px
+		padding: 20px 18px
 
 	&__front-title
 		backface-visibility: hidden
@@ -32,9 +32,9 @@
 		+markpro
 		font-weight: 700
 		line-height: 1.2
-		font-size: 32px
-		padding-bottom: 21px
-		margin-bottom: 30px
+		font-size: 28px
+		padding-bottom: 12px
+		margin-bottom: 12px
 		&:after
 			backface-visibility: hidden
 			content: ''
@@ -50,6 +50,10 @@
 		font-weight: 400
 		font-size: 18px
 		line-height: 1.33
+		max-height: 186px
+		overflow: hidden
+		+r(767)
+			font-size: 16px
 
 	&__front-button
 		background: none
@@ -63,7 +67,7 @@
 		height: 100%
 		backface-visibility: hidden
 		transform: rotateY(180deg)
-		padding: 40px 18px
+		padding: 20px 18px
 		background-color: $light-blue
 
 	&__top
@@ -98,6 +102,8 @@
 		font-weight: 700
 		font-size: 24px
 		margin-bottom: 15px
+		+r(420)
+			font-size: 16px
 
 
 	&__back-descr
@@ -105,7 +111,7 @@
 		font-weight: 400
 		font-size: 18px
 		line-height: 1.33
-		margin-bottom: 27px
+		margin-bottom: 10px
 
 	&__back-list
 
@@ -127,6 +133,8 @@
 		font-size: 18px
 		line-height: 1.33
 		margin-left: 34px
+		+r(767)
+			font-size: 16px
 
 	&__back-button
 		margin-top: auto

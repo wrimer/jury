@@ -1,20 +1,20 @@
 .about
-	height: 900px
-	padding-top: 262px
-	padding-bottom: 280px
+	display: flex
+	min-height: 630px
+	padding-top: 80px
+	padding-bottom: 80px
 	min-width: 320px
 	+r(991)
-		padding-top: 174px
-		padding-bottom: 136px
+		padding-top: 80px
+		padding-bottom: 80px
 	+r(767)
-		padding-top: 149px
-		padding-bottom: 183px
-		height: 568px
+		padding-top: 80px
+		padding-bottom: 80px
+		min-height: 368px
 	+r(480)
 		padding-top: 75px
 
 	&__container
-		height: 100%
 
 	&__text
 		+markpro
@@ -24,16 +24,18 @@
 		color: $white
 		text-align: center
 		+r(767)
+			margin-bottom: 20px
 			font-size: 16px
 
 	&__title
-		text-align: center
-		padding: 0 40px
 		margin-top: auto
+		font-size: 60px
+		text-align: center
+		padding: 0 40px 40px
 		+r(1199)
-			font-size: 60px
+			font-size: 45px
 		+r(767)
-			padding: 0
+			padding: 0 0 40px
 
 	&__row
 		height: 100%

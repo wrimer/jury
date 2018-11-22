@@ -1,9 +1,9 @@
 {% set filter = ['all', 'legal', 'blockchain', 'finance', 'it'] %}
 <section class="filter">
   <div class="filter__container container">
-    <div class="filter__row row">
-      <form class="category__form">
-        <div class="filter__col col-sm-8">
+    <form class="category__form">
+      <div class="filter__row row">
+        <div class="filter__col col-xs-12 col-md-8">
           <h3 class="filter__title">Category</h3>
           <div class="filter__list category">
             {% for item in filter %}
@@ -14,15 +14,17 @@
             {% endfor %}
           </div>
         </div>
-        <div class="filter__col filter__col-rating col-sm-4">
-          <h3 class="filter__title">Rating</h3>
-          <div class="filter__star">
-            {{ mixins.icon('star') }}
+        <div class="filter__col col-xs-12 col-md-4">
+          <div class="filter__rating-wrapper">
+            <h3 class="filter__title">Rating</h3>
+            <div class="filter__star">
+              {{ mixins.icon('star') }}
+            </div>
           </div>
           <div id="js-range" class="filter__range js-range"></div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 
 </section>

@@ -1,6 +1,8 @@
 .filter
 	margin-top: 35px
 	margin-bottom: 35px
+	+r(991)
+		margin-top: 10px
 
 	&__container
 
@@ -8,10 +10,9 @@
 
 	&__col
 
-	&__col-rating
+	&__rating-wrapper
 		display: flex
 		align-items: baseline
-		flex-wrap: wrap
 
 	&__title
 		margin-bottom: 18px
@@ -21,6 +22,8 @@
 		color: $gray
 		letter-spacing: 1.67px
 		font-weight: 600
+		+r(991)
+			margin-top: 25px
 
 	&__star
 		margin-left: 10px
@@ -35,3 +38,6 @@
 	&__range
 		width: 100%
 		margin-top: 4px
+		+r(991)
+			margin-bottom: 50px
+			max-width: 285px
