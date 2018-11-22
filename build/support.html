@@ -164,7 +164,7 @@
                     <input class="form-text__input" type="text" name="question" placeholder="Question" />
                   </label>
                   <div class="form-text__button-row form-text__button-row_sm">
-                    <button href="#" class="form-text__button button button_decorated button_blue">Send Resume</button>
+                    <button type="button" class="form-text__button button button_decorated button_blue js-modal-open">Send Resume</button>
                   </div>
                 </form>
               </div>
@@ -172,10 +172,12 @@
           </div>
         </div>
       </section>
-      <div class="youtube-modal js-youtube-modal">
-        <!-- Modal content -->
-        <div class="youtube-modal__content">
-          <iframe class="youtube-modal__video js-youtube-video" src="https://www.youtube.com/embed/ofFKvgUVxEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="support-modal modal js-modal">
+        <div class="support-modal__content">
+          <div class="support-modal__close modal-close js-modal-close"></div>
+          <p class="support-modal__title">Question Successfully Sent</p>
+          <p class="support-modal__descr">Please check your mail. We will reply you within a few days.</p>
+          <button type="button" class="support-modal__button button button_pink button_pink_lg">Continue Exploring</button>
         </div>
       </div>
       <footer class="footer">
