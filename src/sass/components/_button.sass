@@ -11,23 +11,33 @@
 		text-decoration: underline
 
 	&_pink
+		box-sizing: border-box
 		display: inline-block
 		background-color: $pink
 		padding: 10px 30px
 		&:after
 			background: url("../img/arrow-white.svg")no-repeat
 		&:hover
+			text-decoration: none
+			color: $pink
+			background-color: $white
+			border: 1px $pink solid
+			padding: 9px 29px
 			&:after
 				opacity: .5
+				background: url("../img/arrow-pink.svg")no-repeat
 
 	&_pink_lg
 		padding: 20px 23px
+		&:hover
+			padding: 19px 22px
 
 	&_blue
 		color: $blue
 		&:after
 			background: url("../img/arrow-blue.svg")no-repeat
 		&:hover
+			text-decoration: none
 			color: rgba($blue, .7)
 			&:after
 				opacity: .7
