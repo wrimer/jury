@@ -14,7 +14,7 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <header id="header" class="header js-menu-header ">
+      <header id="header" class="header js-menu-header header_purple">
         <div class="header__container container">
           <div class="row">
             <div class="header__logo col-md-3 col-sm-9 col-xs-9">
@@ -83,23 +83,23 @@
       <div class="internal-about">
         <div class="internal-about__title-inner">
           <div class="internal-about__container container">
-            <h1 class="internal-about__title title title_white">Consumer Generated Media</h1>
+            <h1 class="internal-about__title title title_white">Ruby-on-rails Developers</h1>
+            <div class="internal-about__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list breadcrumbs__list_left">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link breadcrumbs__link_white ">Home </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link breadcrumbs__link_white ">About </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link breadcrumbs__link_white  breadcrumbs__link_current">Internal page </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="internal-about__container container">
-          <div class="internal-about__breadcrumbs breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__link">Home </a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__link">About </a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__link breadcrumbs__link_current">Internal page </a>
-              </li>
-            </ul>
-          </div>
           <div class="internal-about__inner">
             <article class="internal-about__text">
               <h3>description</h3>
@@ -122,6 +122,25 @@
               <p>We are currently searching for ruby-on-rails developers. If you consider yourself perfectly suited for the position — just contact us LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portabl.</p>
             </article>
             <div class="internal-about__sidebar">
+              <div class="internal-about__card white-card">
+                <div class="internal-about__title title"> Join Us</div>
+                <div class="internal-about__subtitle">Please, do not forget to attach your resume</div>
+                <form class="internal-about__form form-text">
+                  <label class="form-text__label form-text__label_mt">
+                    <input class="form-text__input" type="text" name="question" placeholder="Full Name" />
+                  </label>
+                  <label class="form-text__label form-text__label_mt">
+                    <input class="form-text__input" type="text" name="question" placeholder="Your e-mail" />
+                  </label>
+                  <label class="form-text__label form-text__label-file form-text__label_mt">
+                    <p class="form-text__label-text">Attach your cv</p>
+                    <input class="form-text__input form-text__input-file" type="file" name="CV-file" />
+                  </label>
+                  <div class="form-text__button-row form-text__button-row_sm">
+                    <button type="button" class="form-text__button button button_decorated button_pink button_pink_lg js-modal-open">Send Resume </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>

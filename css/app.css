@@ -2363,10 +2363,6 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
-input[type="file"] {
-  display: block;
-}
-
 input[type="range"] {
   display: block;
   width: 100%;
@@ -7652,7 +7648,7 @@ body {
 
 .white-card {
   width: 555px;
-  height: 551px;
+  min-height: 551px;
   margin: 0 auto;
   background-color: #fff;
   padding: 75px 75px 90px;
@@ -7807,6 +7803,31 @@ body {
   bottom: 0px;
 }
 
+.form-text__label-file:after {
+  display: none;
+}
+
+.form-text__label-text {
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  color: #03357B;
+}
+
+.form-text__label-text:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  background: url("../img/clip.svg") no-repeat center;
+}
+
+.form-text__label-text:hover {
+  opacity: .7;
+}
+
 .form-text__label_mt {
   margin-top: 30px;
 }
@@ -7827,6 +7848,10 @@ body {
 
 .form-text__input::placeholder {
   color: #313336;
+}
+
+.form-text__input-file {
+  display: none;
 }
 
 .form-text__button-row {
@@ -9715,6 +9740,69 @@ body {
   margin-top: auto;
 }
 
+.internal-about__title-inner {
+  position: fixed;
+  width: 100%;
+  top: 78px;
+  padding: 15px 0 0;
+  background-color: #03357B;
+  z-index: 1;
+}
+
+.internal-about__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 243px 0 40px;
+}
+
+.internal-about__text {
+  width: calc(50% - 15px);
+}
+
+.internal-about__text h3 {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #313336;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.67px;
+  margin-bottom: 13px;
+}
+
+.internal-about__text p {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #313336;
+  font-size: 18px;
+  line-height: 1.52;
+  margin-bottom: 35px;
+}
+
+.internal-about__text ul {
+  margin-bottom: 35px;
+}
+
+.internal-about__text li {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #313336;
+  font-size: 18px;
+  line-height: 1.52;
+}
+
+.internal-about__text li:before {
+  content: '— ';
+}
+
+.internal-about__sidebar {
+  width: calc(50% - 15px);
+}
+
+.internal-about__card {
+  width: 100%;
+  padding: 40px 50px 40px;
+}
+
 @media screen and (min-width: 768px){
   .jumbotron{
     padding-top: 48px;
@@ -11179,7 +11267,7 @@ body {
   }
   .white-card{
     width: 100%;
-    height: 352px;
+    min-height: 352px;
     padding: 27px 18px 30px;
   }
   .wrapper_bordered{
@@ -11262,8 +11350,8 @@ body {
     background-color: #000;
   }
   .header{
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .hero{
     height: 568px;
@@ -11528,10 +11616,17 @@ body {
   .internal-wiki{
     background-color: #fff;
   }
+  .internal-wiki__title-inner{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 85px;
+  }
   .internal-wiki__inner{
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    padding-top: 30px;
+    margin-top: 193px;
   }
   .internal-wiki__text{
     width: 100%;
@@ -11564,6 +11659,24 @@ body {
   }
   .support-modal__button{
     margin-top: 24px;
+  }
+  .internal-about__title-inner{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 85px;
+  }
+  .internal-about__inner{
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 193px;
+  }
+  .internal-about__text{
+    width: 100%;
+  }
+  .internal-about__sidebar{
+    width: 100%;
   }
 }
 
