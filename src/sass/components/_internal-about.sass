@@ -1,0 +1,74 @@
+.internal-about
+
+	&__container
+
+	&__title-inner
+		position: fixed
+		width: 100%
+		top: 78px
+		padding: 15px 0 0
+		background-color: $blue
+		z-index: 1
+		+r(767)
+			display: flex
+			align-items: center
+			min-height: 85px
+
+	&__title
+
+	&__breadcrumbs
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		margin: 243px 0 40px
+		+r(767)
+			flex-direction: column
+			margin-top: 193px
+
+	&__text
+		width: calc(50% - 15px)
+		+r(767)
+			width: 100%
+
+		h3
+			+markpro
+			color: $gray
+			font-size: 20px
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: 1.67px
+			margin-bottom: 13px
+
+		p
+			+markpro
+			color: $gray
+			font-size: 18px
+			line-height: 1.52
+			margin-bottom: 35px
+
+		ul
+			margin-bottom: 35px
+
+		li
+			+markpro
+			color: $gray
+			font-size: 18px
+			line-height: 1.52
+			&:before
+				content:  '— '
+
+	&__sidebar
+		width: calc(50% - 15px)
+		+r(767)
+			width: 100%
+
+	&__card
+		width: 100%
+		padding: 40px 50px 40px
+
+	&__title
+
+	&__subtitle
+
+	&__form

@@ -5,6 +5,8 @@ PageList:
   ready: 80
 - file: about.html
   ready: 80
+- file: about-internal.html
+  ready: 80
 - file: services.html
   ready: 80
 - file: wiki.html
