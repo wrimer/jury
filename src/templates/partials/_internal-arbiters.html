@@ -1,0 +1,66 @@
+{% set filter = ['Cryptocurrencies', 'Artificial Intelligence', 'Blockchain'] %}
+<div class="internal-arbiters">
+
+  <div class="internal-arbiters__container container">
+    <div class="internal-arbiters__inner">
+
+      <div class="internal-arbiters__header">
+        <div class="internal-arbiters__card-links">
+          <a href="#" class="internal-arbiters__card-link">
+            <img src="./img/twitter.png" class="internal-arbiters__card-social"></a>
+          <a href="#" class="internal-arbiters__card-link">
+            <img src="./img/linkedin.png" class="internal-arbiters__card-social"></a>
+        </div>
+
+        <p class="internal-arbiters__name">Rachel Buchanan, Esq.</p>
+        <p class="internal-arbiters__position">Marketing Manager ICOBox</p>
+        <p class="internal-arbiters__button button button_pink button_pink_lg">Connect with my project</p>
+      </div>
+
+      <div class="internal-arbiters__avatar">
+        <img src="./img/mediator-avatar-1.jpg" alt="Mediator photo" class="internal-arbiters__image">
+
+        <div class="internal-arbiters__list category">
+          {% for item in filter %}
+            <label class="category__label">
+              <input id="{{ item }}" type="checkbox" class="category__checkbox">
+              <span class="category__text">{{ item }}</span>
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+
+
+      <article class="internal-arbiters__text">
+        <h3>description</h3>
+        <p>We are currently searching for ruby-on-rails developers. If you consider yourself perfectly suited for the
+          position — just contact us
+          LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to
+          create slimmer, more portabl.</p>
+        <h3>requirements</h3>
+        <ul>
+          <li>LCD screens right to open a dispute.</li>
+          <li>Modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more
+            portabl
+          </li>
+          <li>Liquid crystals that make them work have allowed humanity to create slimmer, more portabl.</li>
+          <li>Create slimmer, more portabl.</li>
+        </ul>
+        <h3>duties</h3>
+        <ul>
+          <li>LCD screens right to open a dispute.</li>
+          <li>Modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more
+            portabl
+          </li>
+          <li>Liquid crystals that make them work have allowed humanity to create slimmer, more portabl.</li>
+          <li>Create slimmer, more portabl.</li>
+        </ul>
+        <h3>Additional Information</h3>
+        <p>We are currently searching for ruby-on-rails developers. If you consider yourself perfectly suited for the
+          position — just contact us
+          LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to
+          create slimmer, more portabl.</p>
+      </article>
+    </div>
+  </div>
+</div>

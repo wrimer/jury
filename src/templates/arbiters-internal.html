@@ -1,0 +1,26 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+  {% set isPurpleHeader = true %}
+  {# begin header #}
+  {% include "partials/_header.html" %}
+  {# end header #}
+
+  {# begin internal-wiki #}
+  {% include "partials/_internal-arbiters.html" %}
+  {# end internal-wiki #}
+
+
+  {# begin subscribe #}
+  {% include "partials/_footer.html" %}
+  {# end subscribe #}
+
+{% endblock %}
+
+
+
