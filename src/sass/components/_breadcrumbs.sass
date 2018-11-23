@@ -3,13 +3,21 @@
 	+r(767)
 		display: none
 
+	&_white
+		background-color: $white
+
 	&__container
 
 	&__list
 		display: flex
 		justify-content: flex-end
 
+	&__list_left
+		justify-content: flex-start
+
 	&__item
+
+	&__item_white
 
 	&__link
 		position: relative
@@ -20,6 +28,7 @@
 		color: $blue
 		display: flex
 		margin-right: 24px
+
 		&:after
 			content: ''
 			position: absolute
@@ -29,6 +38,7 @@
 			background-color: $blue
 			right: -14px
 			top: calc(50% - 1px)
+
 		&:hover
 			color: rgba($blue, .85)
 
@@ -37,5 +47,15 @@
 		pointer-events: none
 		opacity: .2
 		margin-right: 0
+
 		&:after
 			display: none
+
+	&__link_white
+		color: white
+
+		&:after
+			background-color: $white
+
+		&:hover
+			color: rgba($white, .85)

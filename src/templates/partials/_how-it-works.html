@@ -2,6 +2,18 @@
 <section class="how-it-works">
   <div class="how-it-works__wrapper wrapper wrapper_bordered">
     <div class="container">
+      {% import 'data/breadcrumbs-support.html' as breadcrumbs %}
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          {% for item in breadcrumbs.list %}
+            <li class="breadcrumbs__item">
+              <a href="#"
+                 class="breadcrumbs__link{% if loop.index === loop.length %} breadcrumbs__link_current{% endif %}">{{ item }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
       <div class="how-it-works__title title">How it works</div>
       <div class="how-it-works__text-wrapper">
         <p class="how-it-works__text">
@@ -48,7 +60,8 @@
 
       <div class="how-it-works__row row">
         <div class="how-it-works__col col-sm-12 col-xs-12 advantages__col-button ">
-          <a href="#" class="how-it-works__button button button_decorated button_pink_lg button_pink">Become an Investor</a>
+          <a href="#" class="how-it-works__button button button_decorated button_pink_lg button_pink">Become an
+            Investor</a>
         </div>
       </div>
 

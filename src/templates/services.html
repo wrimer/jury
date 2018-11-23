@@ -14,6 +14,12 @@ title: Index page
   {% include "partials/_hero-block.html" %}
   {# end hero #}
 
+  {% import 'data/breadcrumbs-clients.html' as breadcrumbs %}
+  {% set breadcrumbsBgWhite = true %}
+  {# begin breadcrumbs #}
+  {% include "partials/_breadcrumbs.html" %}
+  {# end breadcrumbs #}
+
   {% import 'data/service-technology-data.html' as service %}
   {# begin service #}
   {% include "partials/_service.html" %}

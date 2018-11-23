@@ -1,7 +1,8 @@
 .news-article
-	height: 364px
+	position: relative
+	height: 280px
 	+r(767)
-		height: 324px
+		height: 280px
 
 	&__image
 		width: 100%
@@ -24,15 +25,28 @@
 			margin-top: 10px
 
 	&__item-title
+		display: flex
+		align-items: center
+		justify-content: center
+		left: 0
+		right: 0
+		min-height: 50px
+		background-color: rgba($blue, .7)
+		position: absolute
+		top: 200px
+		transform: translateY(-100%)
 		+financier
 		font-size: 24px
 		font-weight: 400
 		letter-spacing: 0.15px
-		margin-top: 8px
 		line-height: 1.2
-
 		a
-			color: $gray
+			color: $white
+		+r(1199)
+			top: 162px
+		+r(767)
+			top: 185px
+
 
 	&__descr
 		+markpro

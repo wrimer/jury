@@ -13,6 +13,12 @@ title: Index page
   {% include "partials/_news-carousel.html" %}
   {# end news #}
 
+  {% import 'data/breadcrumbs-wiki-data.html' as breadcrumbs %}
+  {% set breadcrumbsBgWhite = true %}
+  {# begin breadcrumbs #}
+  {% include "partials/_breadcrumbs.html" %}
+  {# end breadcrumbs #}
+
   {% import 'data/news-technologies-data.html' as news %}
   {# begin news #}
   {% include "partials/_news.html" %}

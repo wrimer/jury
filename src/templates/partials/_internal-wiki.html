@@ -3,23 +3,22 @@
   <div class="internal-wiki__title-inner">
     <div class="internal-wiki__container container">
       <h1 class="internal-wiki__title title title_white">Consumer Generated Media</h1>
+
+      <div class="internal-wiki__breadcrumbs breadcrumbs">
+        <ul class="breadcrumbs__list breadcrumbs__list_left">
+          {% for item in ['Home', 'Wiki', 'Internal page'] %}
+            <li class="breadcrumbs__item">
+              <a href="#"
+                 class="breadcrumbs__link breadcrumbs__link_white {% if loop.index === loop.length %} breadcrumbs__link_current{% endif %}">{{ item }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class="internal-wiki__container container">
-
-    <div class="internal-wiki__breadcrumbs breadcrumbs">
-      <ul class="breadcrumbs__list">
-        {% for item in ['Home', 'Wiki', 'Internal page'] %}
-          <li class="breadcrumbs__item">
-            <a href="#"
-               class="breadcrumbs__link{% if loop.index === loop.length %} breadcrumbs__link_current{% endif %}">{{ item }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-
     <div class="internal-wiki__inner">
       <article class="internal-wiki__text">
         <p> LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity
