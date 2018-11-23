@@ -7296,10 +7296,15 @@ body {
 }
 
 .title {
+  line-height: 1;
   font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-size: 48px;
   font-weight: 600;
   color: #03357B;
+}
+
+.title_sm {
+  font-size: 36px;
 }
 
 .title_lg {
@@ -8232,6 +8237,10 @@ body {
 
 .breadcrumbs {
   padding: 20px 0;
+}
+
+.breadcrumbs_sm {
+  padding: 5px 0;
 }
 
 .breadcrumbs_white {
@@ -9590,7 +9599,7 @@ body {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 248px 0 40px;
+  margin: 175px 0 40px;
 }
 
 .internal-wiki__text {
@@ -9652,6 +9661,10 @@ body {
 .filter {
   margin-top: 35px;
   margin-bottom: 35px;
+}
+
+.filter__row {
+  width: 100%;
 }
 
 .filter__rating-wrapper {
@@ -9754,7 +9767,7 @@ body {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 243px 0 40px;
+  margin: 175px 0 40px;
 }
 
 .internal-about__text {
@@ -11216,6 +11229,9 @@ body {
   .title{
     font-size: 32px;
   }
+  .title_sm{
+    font-size: 28px;
+  }
   .title_lg{
     font-size: 39px;
   }
@@ -11621,12 +11637,12 @@ body {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    min-height: 85px;
+    min-height: 77px;
   }
   .internal-wiki__inner{
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    margin-top: 193px;
+    margin-top: 175px;
   }
   .internal-wiki__text{
     width: 100%;
@@ -11670,7 +11686,7 @@ body {
   .internal-about__inner{
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: 193px;
+    margin-top: 175px;
   }
   .internal-about__text{
     width: 100%;
