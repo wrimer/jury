@@ -6588,6 +6588,12 @@ html {
   src: local("FinancierDisplay Semibold"), local("FinancierDisplay-Semibold"), url("../fonts/FinancierDisplay-Semibold.woff2") format("woff2"), url("../fonts/FinancierDisplay-Semibold.woff") format("woff");
 }
 
+.icon-eye {
+  width: 1.22em;
+  height: 1em;
+  fill: currentColor;
+}
+
 .icon-star {
   width: 0.94em;
   height: 1em;
