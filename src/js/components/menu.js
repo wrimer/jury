@@ -5,6 +5,15 @@ var items = $('.js-menu-item');
 
 // var items = $('.nav__item-collapse');
 
+var initHeader = function() {
+  var fromTopPx = 50; // distance to trigger
+  var scrolledFromtop = jQuery(window).scrollTop();
+  if(scrolledFromtop > fromTopPx) {
+    header.addClass('header_scrolled');
+  }else{
+    header.removeClass('header_scrolled');
+  }
+};
 
 function initNav() {
   function initNavItems(item) {
@@ -50,12 +59,6 @@ $(document).ready(initNav);
 
 $(window).on('resize', initNav);
 
-$(window).scroll(function() {
-  var fromTopPx = 50; // distance to trigger
-  var scrolledFromtop = jQuery(window).scrollTop();
-  if(scrolledFromtop > fromTopPx) {
-    header.addClass('header_scrolled');
-  }else{
-    header.removeClass('header_scrolled');
-  }
-});
+$(window).ready(initHeader());
+
+$(window).scroll(initHeader);
