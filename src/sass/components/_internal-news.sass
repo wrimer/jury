@@ -1,0 +1,136 @@
+.internal-news
+	padding-top: 108px
+	padding-bottom: 30px
+	background-color: $white
+
+	&__container
+
+	&__card-links
+		display: flex
+		margin-top: 16px
+
+	&__card-link
+		margin-right: 15px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 45px
+		height: 45px
+		background-color: $light-blue
+		+hover
+			opacity: .7
+
+	&__article
+		.internal-news__card-social
+			width: auto
+			margin-top: 0
+		.internal-news__card-links
+			margin-left: 0
+		.internal-news__tags
+			+markpro
+			font-weight: 700
+			color: #a6abb4
+			font-size: 14px
+			text-transform: uppercase
+			margin-top: 24px
+		.internal-news__tags + p
+			+markpro
+			color: #a6abb4
+			font-size: 14px
+			margin-top: 8px
+		.internal-news__date
+			+markpro
+			color: $gray
+			font-size: 20px
+			font-weight: 700
+			margin-top: 20px
+		.internal-news__quotes
+			+markpro
+			font-size: 30px
+			font-weight: 700
+			display: block
+			color: $blue
+			max-width: 320px
+			position: relative
+			float: left
+			line-height: 1.4
+			margin: 8px 8px 8px -150px
+			&:before,&:after
+				content: ''
+				position: absolute
+				left: 0
+				height: 1px
+				width: 165px
+				background-color: #a6abb4
+			&:before
+				top: 0
+			&:after
+				bottom: 0
+			+r(991)
+				margin-left: -102px
+			+r(767)
+				float: none
+				margin-left: 0
+				width: 100%
+				max-width: none
+				&:before,&:after
+					left: 50%
+					transform: translateX(-50%)
+		.internal-news__author
+			color: $blue
+			&:hover
+				color: rgba($blue, .7)
+		.internal-news__category
+			+markpro
+			font-weight: 700
+			color: $gray
+			font-size: 20px
+			text-transform: uppercase
+			+r(767)
+				font-size: 14px
+		h2
+			+financier
+			color: $gray
+			font-size: 55px
+			font-weight: 600
+			margin-top: 18px
+			+r(767)
+				font-size: 24px
+		img
+			width: 100%
+			height: auto
+			margin-top: 48px
+			+r(767)
+				margin-top: 24px
+		img + p
+			+markpro
+			color: #a6abb4
+			font-size: 14px
+		div
+			width: 652px
+			margin-left: 293px
+			+r(1199)
+				margin-left: 190px
+			+r(991)
+				width: 617px
+				margin-left: 103px
+			+r(767)
+				margin-left: 0
+				width: 100%
+		p
+			+markpro
+			color: $gray
+			font-size: 21px
+			line-height: 1.52
+			margin-top: 16px
+			+r(767)
+				font-size: 16px
+		h3
+			+financier
+			font-size: 32px
+			color: $gray
+			margin-top: 24px
+			font-weight: 600
+			+r(767)
+				font-size: 18px
+

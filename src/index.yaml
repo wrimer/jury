@@ -15,6 +15,8 @@ PageList:
   ready: 80
 - file: news.html
   ready: 80
+- file: news-internal.html
+  ready: 80
 - file: clients.html
   ready: 80
 - file: support.html

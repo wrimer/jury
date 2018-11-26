@@ -9948,6 +9948,155 @@ body {
   line-height: 1.53;
 }
 
+.internal-news {
+  padding-top: 108px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.internal-news__card-links {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.internal-news__card-link {
+  margin-right: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #183e74;
+}
+
+.no-touch .internal-news__card-link:hover {
+  opacity: .7;
+}
+
+.internal-news__article .internal-news__card-social {
+  width: auto;
+  margin-top: 0;
+}
+
+.internal-news__article .internal-news__card-links {
+  margin-left: 0;
+}
+
+.internal-news__article .internal-news__tags {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-weight: 700;
+  color: #a6abb4;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+.internal-news__article .internal-news__tags + p {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #a6abb4;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.internal-news__article .internal-news__date {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #313336;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.internal-news__article .internal-news__quotes {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  display: block;
+  color: #03357B;
+  max-width: 320px;
+  position: relative;
+  float: left;
+  line-height: 1.4;
+  margin: 8px 8px 8px -150px;
+}
+
+.internal-news__article .internal-news__quotes:before, .internal-news__article .internal-news__quotes:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 165px;
+  background-color: #a6abb4;
+}
+
+.internal-news__article .internal-news__quotes:before {
+  top: 0;
+}
+
+.internal-news__article .internal-news__quotes:after {
+  bottom: 0;
+}
+
+.internal-news__article .internal-news__author {
+  color: #03357B;
+}
+
+.internal-news__article .internal-news__author:hover {
+  color: rgba(3, 53, 123, 0.7);
+}
+
+.internal-news__article .internal-news__category {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-weight: 700;
+  color: #313336;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.internal-news__article h2 {
+  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #313336;
+  font-size: 55px;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.internal-news__article img {
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+}
+
+.internal-news__article img + p {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #a6abb4;
+  font-size: 14px;
+}
+
+.internal-news__article div {
+  width: 652px;
+  margin-left: 293px;
+}
+
+.internal-news__article p {
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  color: #313336;
+  font-size: 21px;
+  line-height: 1.52;
+  margin-top: 16px;
+}
+
+.internal-news__article h3 {
+  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-size: 32px;
+  color: #313336;
+  margin-top: 24px;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 768px){
   .jumbotron{
     padding-top: 48px;
@@ -10956,6 +11105,9 @@ body {
   .ask-us:before{
     height: 128px;
   }
+  .internal-news__article div{
+    margin-left: 190px;
+  }
 }
 
 @media only screen and (max-width: 991px){
@@ -11210,6 +11362,13 @@ body {
   }
   .internal-arbiters__text{
     width: calc(60% - 15px);
+  }
+  .internal-news__article .internal-news__quotes{
+    margin-left: -102px;
+  }
+  .internal-news__article div{
+    width: 617px;
+    margin-left: 103px;
   }
 }
 
@@ -11871,6 +12030,36 @@ body {
   }
   .internal-arbiters__text{
     width: 100%;
+  }
+  .internal-news__article .internal-news__quotes{
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+  }
+  .internal-news__article .internal-news__quotes:before, .internal-news__article .internal-news__quotes:after{
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .internal-news__article .internal-news__category{
+    font-size: 14px;
+  }
+  .internal-news__article h2{
+    font-size: 24px;
+  }
+  .internal-news__article img{
+    margin-top: 24px;
+  }
+  .internal-news__article div{
+    margin-left: 0;
+    width: 100%;
+  }
+  .internal-news__article p{
+    font-size: 16px;
+  }
+  .internal-news__article h3{
+    font-size: 18px;
   }
 }
 
