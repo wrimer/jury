@@ -9,24 +9,26 @@
         <ul class="mediator-list__card-list feedback-card">
           {% set item = data.list[i] %}
           {% for item in data.list %}
-          <li class="feedback-card__card-item feedback-card__card-item_sm">
-            <img src="./img/{{ item.photo }}" alt="Mediator image" class="feedback-card__card-avatar">
-            <div class="feedback-card__card-blue">
-              <p class="feedback-card__card-name">{{ item.name }}</p>
-              <p class="feedback-card__card-position">{{ item.position }}</p>
-            </div>
-            <p class="feedback-card__card-text">{{ item.text }}</p>
-            <div class="feedback-card__card-rating">
-              {{ mixins.icon('star') }}
-              <p class="feedback-card__card-rating-text">3,2</p>
-            </div>
-            <div class="feedback-card__card-links">
-              <a href="#" class="feedback-card__card-link">
-                <img src="./img/twitter.png" class="feedback-card__card-social"></a>
-              <a href="#" class="feedback-card__card-link">
-                <img src="./img/linkedin.png" class="feedback-card__card-social"></a>
-            </div>
-          </li>
+            <li class="feedback-card__card-item feedback-card__card-item_sm">
+              <a class="feedback-card__link" href="#">
+                <img src="./img/{{ item.photo }}" alt="Mediator image" class="feedback-card__card-avatar">
+                <div class="feedback-card__card-blue">
+                  <p class="feedback-card__card-name">{{ item.name }}</p>
+                  <p class="feedback-card__card-position">{{ item.position }}</p>
+                </div>
+                <p class="feedback-card__card-text">{{ item.text }}</p>
+                <div class="feedback-card__card-rating">
+                  {{ mixins.icon('star') }}
+                  <p class="feedback-card__card-rating-text">3,2</p>
+                </div>
+                <div class="feedback-card__card-links">
+                  <a href="#" class="feedback-card__card-link">
+                    <img src="./img/twitter.png" class="feedback-card__card-social"></a>
+                  <a href="#" class="feedback-card__card-link">
+                    <img src="./img/linkedin.png" class="feedback-card__card-social"></a>
+                </div>
+              </a>
+            </li>
           {% endfor %}
         </ul>
       </div>
