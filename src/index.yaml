@@ -21,4 +21,6 @@ PageList:
   ready: 80
 - file: arbiters.html
   ready: 80
+- file: arbiters-internal.html
+  ready: 80
 

@@ -5,8 +5,6 @@ var video = $('.js-youtube-video');
 
 $(window).ready(function() {
 
-  console.log(modal);
-
   btn.click(function() {
     modal.css('display', 'block');
   });
