@@ -7483,6 +7483,7 @@ body {
 }
 
 .feedback__avatar {
+  margin-top: 20px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -7502,7 +7503,7 @@ body {
 }
 
 .feedback__blue_left {
-  top: 5px;
+  top: 0;
   left: 0;
   right: 38px;
   padding: 27px 0 75px 106px;
@@ -7566,7 +7567,7 @@ body {
 
 .feedback__white_left {
   right: 0;
-  left: 37px;
+  left: -38px;
   bottom: 0;
   padding: 32px 180px 32px 69px;
 }
@@ -11022,8 +11023,8 @@ body {
     height: 220px;
   }
   .feedback__white_left{
-    left: 30px;
-    padding: 27px 62px 32px 28px;
+    left: -20px;
+    padding: 27px 62px 32px 48px;
   }
   .feedback__white_right{
     left: 72px;
