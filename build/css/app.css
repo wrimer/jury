@@ -7483,7 +7483,7 @@ body {
 }
 
 .feedback__avatar {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -11008,6 +11008,9 @@ body {
   .feedback__image{
     width: 273px;
     height: 311px;
+  }
+  .feedback__avatar{
+    margin-top: 20px;
   }
   .feedback__blue{
     height: 200px;
