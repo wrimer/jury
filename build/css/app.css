@@ -7410,16 +7410,29 @@ body {
 }
 
 .advantage {
+  font-size: 0;
   position: relative;
 }
 
+.advantage:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 42, 91, 0.6);
+  top: 0;
+  left: 0;
+}
+
 .advantage__image {
+  position: relative;
   width: calc(100% - 1px);
   height: 350px;
   object-fit: cover;
 }
 
 .advantage__text {
+  z-index: 1;
   position: absolute;
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   padding: 0 25px;
