@@ -9662,6 +9662,7 @@ body {
   top: 78px;
   padding: 15px 0 0;
   background-color: #03357B;
+  z-index: 1;
 }
 
 .internal-wiki__inner {
