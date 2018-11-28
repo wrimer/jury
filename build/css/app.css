@@ -7391,13 +7391,15 @@ body {
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.15px;
   line-height: 1.2;
 }
 
 .news-article__item-title a {
+  text-align: center;
+  text-decoration: none;
   color: #fff;
 }
 
