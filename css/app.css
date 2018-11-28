@@ -10043,7 +10043,7 @@ body {
 
 .internal-news__article .internal-news__quotes {
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   display: block;
   color: #03357B;
@@ -10099,6 +10099,8 @@ body {
   width: 100%;
   height: auto;
   margin-top: 48px;
+  max-height: 330px;
+  object-fit: cover;
 }
 
 .internal-news__article img + p {
@@ -10115,14 +10117,14 @@ body {
 .internal-news__article p {
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   color: #313336;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.52;
   margin-top: 16px;
 }
 
 .internal-news__article h3 {
   font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   color: #313336;
   margin-top: 24px;
   font-weight: 600;
