@@ -7611,11 +7611,9 @@ body {
 }
 
 .feedback-card__card-item {
+  font-size: 0;
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: block;
   width: 49.8%;
 }
 
@@ -8563,7 +8561,7 @@ body {
 }
 
 .hero {
-  min-height: 630px;
+  min-height: 677px;
   background: #000 url("../img/index-hero-bg.jpg") no-repeat center;
   background-size: cover;
   min-width: 320px;
@@ -8624,7 +8622,7 @@ body {
   min-height: 260px;
   width: 359px;
   background-color: #fff;
-  margin-top: 39px;
+  margin-top: 86px;
   padding: 40px 47px 40px 40px;
 }
 
