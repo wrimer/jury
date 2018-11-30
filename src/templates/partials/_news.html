@@ -14,8 +14,10 @@
             {% if item.category %}
               <div class="news-article__category">{{ item.category }}</div>
             {% endif %}
-            <div class="news-article__item-title"><a href="#">{{ item.title }}</a></div>
-            <div class="news-article__descr">{{ item.descr }}</div>
+            <a href="#" class="news-article__item-title">
+              <p >{{ item.title }}</p>
+              <div class="news-article__descr">{{ item.descr }}</div>
+            </a>
           </div>
         </div>
       {% endfor %}

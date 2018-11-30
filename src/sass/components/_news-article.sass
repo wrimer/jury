@@ -1,6 +1,5 @@
 .news-article
 	position: relative
-	min-height: 280px
 	margin-bottom: 16px
 	+r(767)
 		min-height: 280px
@@ -8,6 +7,9 @@
 		.news-article__item-title
 			top: 0
 			transform: translateY(0%)
+		.news-article__descr
+			opacity: 1
+			height: auto
 
 	&__image
 		width: 100%
@@ -25,13 +27,17 @@
 		font-weight: 400
 		letter-spacing: 2px
 		text-transform: uppercase
-		margin-top: 16px
+		margin-top: 4px
 		+r(991)
-			margin-top: 10px
+			margin-top: 4px
 
 	&__item-title
+		max-height: 200px
+		color: $white
+		padding: 0 8px
 		transition: 0.4s
 		display: flex
+		flex-direction: column
 		align-items: center
 		justify-content: center
 		left: 0
@@ -51,14 +57,21 @@
 			text-decoration: none
 			color: $white
 		+r(1199)
+			max-height: 162px
 			top: 162px
 		+r(767)
+			max-height: 185px
 			top: 185px
+		&:hover
+			text-decoration: none
 
 
 	&__descr
+		opacity: 0
+		height: 0
+		transition: 400ms
 		+markpro
 		line-height: 1.57
-		color: $gray
+		color: $white
 		font-size: 14px
 		margin-top: 8px
