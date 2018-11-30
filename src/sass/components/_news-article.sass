@@ -4,6 +4,10 @@
 	margin-bottom: 16px
 	+r(767)
 		min-height: 280px
+	&:hover
+		.news-article__item-title
+			top: 0
+			transform: translateY(0%)
 
 	&__image
 		width: 100%
@@ -26,6 +30,7 @@
 			margin-top: 10px
 
 	&__item-title
+		transition: 0.4s
 		display: flex
 		align-items: center
 		justify-content: center
