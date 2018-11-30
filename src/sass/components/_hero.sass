@@ -61,7 +61,6 @@
 		width: 420px
 		background-color: $white
 		margin-top: 86px
-		padding: 40px 47px 40px 40px
 		+r(991)
 			margin-top: 40px
 			margin-left: 16px
@@ -71,7 +70,6 @@
 			width: 100%
 			margin-left: 0
 			margin-top: 68px
-			padding: 20px 23px 20px 25px
 			&:before
 				display: none
 		&:before
@@ -82,11 +80,22 @@
 			height: 100%
 			top: 0
 			right: 0
-			border: 2px white solid
+			background: url("../img/jury-platform.png")
+			background-size: cover
 		&:hover
 			&:before
-				top: -39px
-				right: -39px
+				top: -60px
+				right: -60px
+
+	&__text-wrapper
+		position: relative
+		background-color: $white
+		width: 100%
+		height: 100%
+		padding: 40px 47px 40px 40px
+		+r(767)
+			padding: 20px 23px 20px 25px
+
 
 
 
