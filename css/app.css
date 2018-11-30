@@ -7353,6 +7353,8 @@ body {
 }
 
 .news-article {
+  font-size: 0;
+  overflow: hidden;
   position: relative;
   margin-bottom: 16px;
 }
@@ -7376,6 +7378,7 @@ body {
 
 .news-article__category {
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  display: none;
   color: #03357B;
   font-size: 12px;
   font-weight: 400;
