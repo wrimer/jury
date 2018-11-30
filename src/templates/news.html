@@ -9,9 +9,10 @@ title: Index page
   {% include "partials/_header.html" %}
   {# end header #}
 
-  {# begin news #}
-  {% include "partials/_news-carousel.html" %}
-  {# end news #}
+  {% import 'data/hero-news-data.html' as about %}
+  {# begin hero #}
+  {% include "partials/_hero-block.html" %}
+  {# end hero #}
 
   {% import 'data/breadcrumbs-wiki-data.html' as breadcrumbs %}
   {% set breadcrumbsBgWhite = true %}
