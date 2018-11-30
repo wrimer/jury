@@ -7360,14 +7360,13 @@ body {
 }
 
 .news-article:hover .news-article__item-title {
-  top: 0;
   -ms-transform: translateY(0%);
   transform: translateY(0%);
 }
 
 .news-article:hover .news-article__descr {
   opacity: 1;
-  height: auto;
+  max-height: 150px;
 }
 
 .news-article__image {
@@ -7390,7 +7389,6 @@ body {
 .news-article__item-title {
   max-height: 200px;
   color: #fff;
-  padding: 0 8px;
   transition: 0.4s;
   display: -ms-flexbox;
   display: flex;
@@ -7402,12 +7400,9 @@ body {
   justify-content: center;
   left: 0;
   right: 0;
-  min-height: 50px;
   background-color: rgba(3, 53, 123, 0.7);
   position: absolute;
-  top: 200px;
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  bottom: 0;
   font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -7425,15 +7420,20 @@ body {
   text-decoration: none;
 }
 
+.news-article__item-head {
+  padding: 8px;
+}
+
 .news-article__descr {
-  opacity: 0;
-  height: 0;
+  max-height: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
   transition: 400ms;
   font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   line-height: 1.57;
-  color: #fff;
+  color: #313336;
   font-size: 14px;
-  margin-top: 8px;
 }
 
 .advantage {
@@ -11053,7 +11053,6 @@ body {
   }
   .news-article__item-title{
     max-height: 162px;
-    top: 162px;
   }
   .advantage__image{
     height: 350px;
@@ -11617,7 +11616,6 @@ body {
   }
   .news-article__item-title{
     max-height: 185px;
-    top: 185px;
   }
   .advantage__image{
     height: 185px;
