@@ -7335,7 +7335,7 @@ body {
 
 .title {
   line-height: 1;
-  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-size: 48px;
   font-weight: 600;
   color: #03357B;
@@ -7371,6 +7371,7 @@ body {
 }
 
 .news-article__image {
+  border-radius: 7px;
   width: 100%;
   object-fit: cover;
   height: 200px;
@@ -7388,6 +7389,7 @@ body {
 }
 
 .news-article__item-title {
+  border-radius: 0 0 7px 7px;
   max-height: 200px;
   color: #fff;
   transition: 0.4s;
@@ -7404,7 +7406,7 @@ body {
   background-color: rgba(3, 53, 123, 0.7);
   position: absolute;
   bottom: 0;
-  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.15px;
@@ -9373,7 +9375,7 @@ body {
 
 .alphabet__text {
   position: relative;
-  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-weight: 500;
   font-size: 21px;
   color: #313336;
@@ -9475,7 +9477,7 @@ body {
 }
 
 .news-carousel__descr {
-  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-size: 36px;
   font-weight: 600;
   max-width: 604px;
@@ -9565,7 +9567,7 @@ body {
 
 .support-info__credentials-value {
   display: inline-block;
-  font-family: 'FinancierDisplay', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
+  font-family: 'MarkPro', 'Roboto', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #fff;
