@@ -8769,6 +8769,11 @@ body {
   margin-bottom: 20px;
 }
 
+.advantages__list {
+  overflow: hidden;
+  border-radius: 7px;
+}
+
 .advantages__col-button {
   display: -ms-flexbox;
   display: flex;
