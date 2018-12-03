@@ -7524,6 +7524,7 @@ body {
 }
 
 .feedback__avatar {
+  border-radius: 7px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -7543,6 +7544,7 @@ body {
 }
 
 .feedback__blue_left {
+  border-radius: 0 7px 0 0;
   top: 30px;
   left: 0;
   right: 30px;
@@ -7550,6 +7552,7 @@ body {
 }
 
 .feedback__blue_right {
+  border-radius: 7px 0 0 7px;
   top: 30px;
   left: 0;
   right: 0;
@@ -7602,6 +7605,7 @@ body {
 }
 
 .feedback__white {
+  border-radius: 7px;
   background-color: #fff;
   position: absolute;
   height: 200px;
@@ -8644,6 +8648,7 @@ body {
 }
 
 .hero__text {
+  border-radius: 7px;
   position: relative;
   min-height: 230px;
   width: 420px;
@@ -8652,6 +8657,7 @@ body {
 }
 
 .hero__text:before {
+  border-radius: 7px;
   transition: 400ms;
   content: '';
   position: absolute;
@@ -8669,6 +8675,7 @@ body {
 }
 
 .hero__text-wrapper {
+  border-radius: 7px;
   position: relative;
   background-color: #fff;
   width: 100%;
