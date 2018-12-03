@@ -7209,6 +7209,7 @@ body {
   font-size: 12px;
   letter-spacing: 2px;
   background: none;
+  border-radius: 7px;
 }
 
 .button:hover {
